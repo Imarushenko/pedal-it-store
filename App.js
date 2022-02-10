@@ -25,7 +25,7 @@ export default () => {
             fontFamily: "Audiowide_400Regular",
           }}
         >
-          Audiowide Regular
+          Audiowide Regular (Test)
         </Text>
       </View>
     );
