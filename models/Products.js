@@ -11,5 +11,5 @@ class Product {
         this.review = review;
     }
 }
-//
+
 export default Product;
