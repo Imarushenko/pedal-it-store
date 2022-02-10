@@ -18,7 +18,7 @@ export default StyleSheet.create({
   container: {
     flex: 1,
     borderRadius: 15,
-    shadowColor: "red",
+    shadowColor: "#CD6155",
     shadowOpacity: 0.6,
     shadowOffset: { width: 0, height: 2 },
     shadowRadius: 10,
@@ -35,8 +35,10 @@ export default StyleSheet.create({
   },
 
   title: {
-    fontSize: 20,
-    color: "white",
+    fontSize: 50,
+    color: "#FDFEFE",
     textAlign: "center",
+    fontWeight: "bold",
+    position: "center",
   },
 });
