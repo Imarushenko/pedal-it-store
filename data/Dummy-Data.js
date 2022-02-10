@@ -2,6 +2,7 @@
 import Category from "../models/Categories";
 import Product from "../models/Products";
 
+// categories
 export const CATEGORIES = [
   new Category(
     "cat1",
@@ -36,6 +37,185 @@ export const CATEGORIES = [
 ];
 
 // TODO reviews
+// products
 export const PRODUCTS = [
-    new Product("proc1", ["cat1"], "https://pictures.ssg-service.com/286/286305_1795827_png_overview_4.png", "SCOTT RANSOM 900 TUNED AXS BIKE", "The Ransom. This Enduro Mountain Bike features 170mm of trail munchin', climb crushing, stage winning all day pinning mountain biking excellence.", "M", 2599.00, 300.00),
-]
+  // enduro bikes products
+  new Product(
+    "proc1",
+    ["cat1"],
+    "https://pictures.ssg-service.com/286/286305_1795827_png_overview_4.png",
+    "SCOTT RANSOM 900 TUNED AXS BIKE",
+    "The Ransom. This Enduro Mountain Bike features 170mm of trail munchin', climb crushing, stage winning all day pinning mountain biking excellence.",
+    "M",
+    2599.0,
+    300.0
+  ),
+  new Product(
+    "proc2",
+    ["cat1"],
+    "https://pictures.ssg-service.com/286/286370_1795870_png_overview_4.png",
+    "SCOTT CONTESSA RANSOM 910 BIKE",
+    "The Contessa Ransom. This enduro mountain bike features 170mm of trail munchin', climb crushing, stage winning all day pinning mountain biking excellence.",
+    "L",
+    4499.0,
+    200.0
+  ),
+  new Product(
+    "proc3",
+    ["cat1"],
+    "https://pictures.ssg-service.com/286/286603_1795668_png_overview_4.png",
+    "SCOTT RANSOM 600 BIKE",
+    "The SCOTT Ransom 600 is the fast and capable mountain bike for kids that dreams are made of.",
+    "XL",
+    6999.0,
+    300.0
+  ),
+  new Product(
+    "proc4",
+    ["cat1"],
+    "https://pictures.ssg-service.com/286/286308_1795830_png_overview_6.png",
+    "SCOTT RANSOM 930 BIKE",
+    "The Ransom. This Enduro Mountain Bike features 170mm of trail munchin', climb crushing, stage winning all day pinning mountain biking excellence.",
+    "XL",
+    6999.0,
+    300.0
+  ),
+
+  // downhill  bikes products
+  new Product(
+    "proc5",
+    ["cat2"],
+    "https://pictures.ssg-service.com/286/286309_1795831_png_overview_4.png",
+    "SCOTT GAMBLER 900 TUNED BIKE",
+    "The Gambler Tuned is a downhill mountain bike that was designed for one thing and one thing only, pure, unadulterated speed.",
+    "XL",
+    4999.0,
+    100.0
+  ),
+
+  new Product(
+    "proc6",
+    ["cat2"],
+    "https://pictures.ssg-service.com/286/286310_1795832_png_overview_4.png",
+    "SCOTT GAMBLER 910 BIKE",
+    "The Gambler is a downhill mountain bike that was designed for one thing and one thing only, pure, unadulterated speed. We made it to get you to take lines you'd never thought imaginable, to make you want to go to the bathroom before your race run - twice.",
+    "L",
+    5999.0,
+    400.0
+  ),
+
+  new Product(
+    "proc7",
+    ["cat2"],
+    "https://pictures.ssg-service.com/286/286311_1795833_png_overview_4.png",
+    "SCOTT GAMBLER 920 BIKE",
+    "The Gambler is a downhill mountain bike that was designed for one thing and one thing only, pure, unadulterated speed. We made it to get you to take lines you'd never thought imaginable, to make you want to go to the bathroom before your race run - twice.",
+    "S",
+    3999.0,
+    500.0
+  ),
+
+  new Product(
+    "proc8",
+    ["cat2"],
+    "https://pictures.ssg-service.com/286/286604_1795669_png_overview_4.png",
+    "SCOTT VOLTAGE YZ 0.1 BIKE",
+    "The SCOTT Voltage YZ 0.1 is our Pro riders replica bike built around a high-end Alloy dirtjump mountain bike frame. Equipped with ultashort adjustable chain stays, a tapered headtube and high-end components, this bike is perfect for hitting the pumptrack, the dirtjumps, or jibbin' through the streets.",
+    "M",
+    7499.0,
+    100.0
+  ),
+
+  // trail / xc bikes products
+  new Product(
+    "proc9",
+    ["cat3"],
+    "https://pictures.ssg-service.com/286/286604_1795669_png_overview_4.png",
+    "SCOTT SPARK 900 ULTIMATE EVO AXS BIKE",
+    "When you think of the perfect mountain bike, what comes to mind? For us, it's the all new Spark 900 Ultimate EVO AXS. Why, you ask? Well, beyond the fact that it is fast, lightweight and ultra capable on all sorts of terrain, it's just damned good lookin'.",
+    "L",
+    4799.0,
+    150.0
+  ),
+
+  new Product(
+    "proc10",
+    ["cat3"],
+    "https://pictures.ssg-service.com/286/286281_1795785_png_overview_6.png",
+    "SCOTT VOLTAGE YZ 0.1 BIKE",
+    "When you think of the perfect mountain bike, what comes to mind? For us, it's the all new Spark 900 Tuned AXS. Why, you ask? Well, beyond the fact that it is fast, lightweight and ultra capable on all sorts of terrain, it's just damned good lookin'.", 
+    "S",
+    5599.0,
+    120.0
+  ),
+
+  new Product(
+    "proc11",
+    ["cat3"],
+    "https://pictures.ssg-service.com/286/286286_1795800_png_overview_4.png",
+    "SCOTT SPARK 930 BIKE ORANGE",
+    "When you think of the perfect mountain bike, what comes to mind? For us, it's the all new Spark 930. Why, you ask? Well, beyond the fact that it is fast, lightweight and ultra capable on all sorts of terrain, it's just damned good lookin'.", 
+    "XL",
+    9599.0,
+    220.0
+  ),
+
+  new Product(
+    "proc12",
+    ["cat3"],
+    "https://pictures.ssg-service.com/286/286289_1795809_png_overview_4.png",
+    "SCOTT SPARK 960 BIKE RED",
+    "When you think of the perfect mountain bike, what comes to mind? For us, it's the all new Spark 960. Why, you ask? Well, beyond the fact that it is fast, lightweight and ultra capable on all sorts of terrain, it's just damned good lookin'.", 
+    "L",
+    8599.0,
+    315.0
+  ),
+
+  // Road Bikes products
+  new Product(
+    "proc13",
+    ["cat4"],
+    "https://pictures.ssg-service.com/286/286414_1795890_png_overview_6.png",
+    "SCOTT ADDICT RC ULTIMATE BIKE",
+    "Lightweight? Obviously. Fast? You betcha. Now with more integration than ever before, the Addict RC Ultimate will give you all the competitive advantage you need, should that be for taking your town’s KOMs one by one, sprinting to that mountain top finish or edging out the rest of the field in your local criterium.", 
+    "M",
+    3699.0,
+    105.0
+  ),
+
+  new Product(
+    "proc14",
+    ["cat4"],
+    "https://pictures.ssg-service.com/286/286415_1795891_png_overview_6.png",
+    "SCOTT ADDICT RC PRO BIKE",
+    "Lightweight? Obviously. Fast? You betcha. Now with more integration than ever before, the Addict RC Pro will give you all the competitive advantage you need, should that be for taking your town’s KOMs one by one, sprinting to that mountain top finish or edging out the rest of the field in your local criterium.", 
+    "L",
+    4099.0,
+    99.0
+  ),
+
+  new Product(
+    "proc15",
+    ["cat4"],
+    "https://pictures.ssg-service.com/286/286416_1795892_png_overview_6.png",
+    "SCOTT ADDICT RC 10 BIKE",
+    "Light, fast, and ready to turn heads. The Addict RC 10 provides you with all of the competitive advantage you've ever dreamed of. Fully integrated cables and race-ready spec combine to give you the tool to sprint to a mountain top finish or win your local criterium.", 
+    "S",
+    2099.0,
+    199.0
+  ),
+
+  new Product(
+    "proc16",
+    ["cat4"],
+    "https://pictures.ssg-service.com/286/286418_1795894_png_overview_6.png",
+    "SCOTT ADDICT RC 15 BIKE CARBON BLACK",
+    "Light, fast, and ready to turn heads. The Addict RC 15 provides you with all of the competitive advantage you've ever dreamed of. Fully integrated cables and race-ready spec combine to give you the tool to sprint to a mountain top finish or win your local criterium.", 
+    "XL",
+    1199.0,
+    299.0
+  ),
+
+  //Cross-Country products
+
+];
