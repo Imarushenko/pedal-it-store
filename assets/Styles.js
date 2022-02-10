@@ -11,14 +11,14 @@ export default StyleSheet.create({
 
   gridItem: {
     flex: 1,
-    margin: 12,
-    height: 125,
+    margin: 20,
+    height: 370,
   },
 
   container: {
     flex: 1,
     borderRadius: 15,
-    shadowColor: "green",
+    shadowColor: "red",
     shadowOpacity: 0.6,
     shadowOffset: { width: 0, height: 2 },
     shadowRadius: 10,
@@ -28,9 +28,10 @@ export default StyleSheet.create({
   },
 
   background_image: {
+    flex: 1,
     width: "100%",
     height: "100%",
-    justifyContent: "flex-end",
+    justifyContent: "center",
   },
 
   title: {
