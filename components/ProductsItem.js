@@ -22,5 +22,7 @@ const ProductsItem = (props) => {
         </ImageBackground>
       </View>
     </TouchableOpacity>
+
+    // change after creating the products screen
   );
 };
