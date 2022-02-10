@@ -5,5 +5,4 @@ class Category {
     this.categoryName = categoryName;
     this.imageUrl = imageUrl;
   }
-  // cxvcxvcxv
 }
