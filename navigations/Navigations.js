@@ -18,7 +18,7 @@ export default function StoreNavigator() {
         <Stack.Screen
           name="Products"
           component={ProductsScreen}
-        //   options={({ route }) => ({ title: route.params.procName })}
+          options={({ route }) => ({ title: route.params.procName })}
         ></Stack.Screen>
       </Stack.Navigator>
     </NavigationContainer>

@@ -8,7 +8,7 @@ import styles from "../assets/Styles";
 export default function ProductsScreen({ route, navigation }) {
   const { productId } = route.params;
   const displayedProducts = PRODUCTS.filter(
-    (product) => product.category_id.indexOf(productId) >= 0
+    (product) => product.categoryId.indexOf(productId) >= 0
   );
 
   const renderProductItem = ({ item }) => {
@@ -18,8 +18,8 @@ export default function ProductsScreen({ route, navigation }) {
         price={item.price}
         onSelectProduct={() => {
           navigation.navigate("Products", {
-            procId: item.product_id,
-            procName: item.product_title,
+            procId: item.id,
+            procName: item.title,
           });
         }}
         image={item.productImage}
@@ -28,10 +28,10 @@ export default function ProductsScreen({ route, navigation }) {
   };
 
   return (
-    <View style={styles.container}>
+    <View style={styles.container2}>
       <FlatList
+        keyExtractor={(item) => item.id}
         data={displayedProducts}
-        keyExtractor={(item) => item.category_id}
         renderItem={renderProductItem}
         style={{ width: "100" }}
       ></FlatList>

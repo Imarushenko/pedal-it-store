@@ -27,6 +27,13 @@ export default StyleSheet.create({
     alignItems: "flex-end",
   },
 
+  container2: {
+    flex: 1,
+    backgroundColor: "green",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+
   background_image: {
     flex: 1,
     width: "100%",
