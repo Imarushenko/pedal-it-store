@@ -1,8 +1,10 @@
 // categories class
 class Category {
-  constructor(id, categoryName, imageUrl) {
+  constructor(id, categoryName, categoryImage) {
     this.id = id;
     this.categoryName = categoryName;
-    this.imageUrl = imageUrl;
+    this.categoryImage = categoryImage;
   }
 }
+
+export default Category;
