@@ -26,3 +26,5 @@ const ProductsItem = (props) => {
     // change after creating the products screen
   );
 };
+
+export default ProductsItem;
