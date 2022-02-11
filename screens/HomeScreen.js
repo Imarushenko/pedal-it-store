@@ -12,7 +12,7 @@ const HomeScreen = ({ navigation }) => {
         onSelect={() => {
           navigation.navigate("Products - Total Items: 4", {
             category_id: item.id,
-            catName: item.categoryName,
+            category_name: item.categoryName,
           });
         }}
         image={item.categoryImage}
