@@ -6,18 +6,22 @@ import styles from "../assets/Styles";
 const ProductsItem = (props) => {
   // onSelectProduct refers to product screen>
   return (
-    <TouchableOpacity style={styles.gridItem} onPress={props.onSelectProduct}>
+    <TouchableOpacity
+      style={styles.productGridItem}
+      onPress={props.onSelectProduct}
+    >
       <View style={styles.container}>
         <ImageBackground
           source={{ uri: props.image }}
-          resizeMode="cover"
+          resizeMode="contain"
           style={styles.background_image}
         >
-          <Text style={styles.title} numberOfLines={1}>
+          <Text style={styles.productTitle} numberOfLines={5}>
             {props.title}
           </Text>
-          <Text style={styles.title} numberOfLines={1}>
-            {props.price}
+
+          <Text style={styles.productPriceTitle} numberOfLines={5}>
+            {"Price: " + props.price + ".00$"}
           </Text>
         </ImageBackground>
       </View>
