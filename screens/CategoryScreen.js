@@ -2,13 +2,13 @@
 import React from "react";
 import { View, FlatList } from "react-native";
 import { CATEGORIES, PRODUCTS } from "../data/Dummy-Data";
-import ProductsItem from "../components/ProductsItem";
+import ProductsItem from "../components/ProductsGridTile";
 import styles from "../assets/Styles";
 
-export default function ProductsScreen({ route, navigation }) {
-  const { productId } = route.params;
+export default function CategoriesScreen({ route, navigation }) {
+  const { catId } = route.params;
   const displayedProducts = PRODUCTS.filter(
-    (product) => product.categoryId.indexOf(productId) >= 0
+    (product) => product.categoryId.indexOf(catId) > 0
   );
 
   const renderProductItem = ({ item }) => {
@@ -20,6 +20,7 @@ export default function ProductsScreen({ route, navigation }) {
           navigation.navigate("Products", {
             procId: item.id,
             procName: item.title,
+            
           });
         }}
         image={item.productImage}
@@ -33,8 +34,9 @@ export default function ProductsScreen({ route, navigation }) {
         keyExtractor={(item) => item.id}
         data={displayedProducts}
         renderItem={renderProductItem}
-        style={{ width: "100" }}
+        style={{ width: "50%", height: "100%" }}
       ></FlatList>
     </View>
   );
 }
+

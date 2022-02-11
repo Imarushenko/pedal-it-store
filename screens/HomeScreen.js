@@ -4,13 +4,13 @@ import { CATEGORIES } from "../data/Dummy-Data";
 import CategoryGridTile from "../components/CategoriesGridTile";
 import { FlatList } from "react-native";
 
-const CategoriesScreen = ({ navigation }) => {
+const HomeScreen = ({ navigation }) => {
   const renderGridItem = ({ item }) => {
     return (
       <CategoryGridTile
         title={item.categoryName}
         onSelect={() => {
-          navigation.navigate("Products", {
+          navigation.navigate("Categories", {
             catId: item.id,
             catName: item.categoryName,
           });
@@ -30,4 +30,4 @@ const CategoriesScreen = ({ navigation }) => {
   );
 };
 
-export default CategoriesScreen;
+export default HomeScreen;
