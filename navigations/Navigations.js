@@ -16,7 +16,7 @@ export default function StoreNavigator() {
 
 
         <Stack.Screen
-          name="Categories"
+          name="Products - Total Items: 4"
           component={CategoriesScreen}
         ></Stack.Screen>
 

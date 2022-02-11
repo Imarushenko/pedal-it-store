@@ -10,8 +10,8 @@ const HomeScreen = ({ navigation }) => {
       <CategoryGridTile
         title={item.categoryName}
         onSelect={() => {
-          navigation.navigate("Categories", {
-            catId: item.id,
+          navigation.navigate("Products - Total Items: 4", {
+            category_id: item.id,
             catName: item.categoryName,
           });
         }}

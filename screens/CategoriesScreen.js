@@ -7,8 +7,8 @@ import styles from "../assets/Styles";
 
 export default function CategoriesScreen({ route, navigation }) {
 
-  const catId = route.params.catId;
-  const displayProductsPerCategory = PRODUCTS.filter(item => item.categoryId == catId)
+  const category_id = route.params.category_id;
+  const displayProductsPerCategory = PRODUCTS.filter(item => item.categoryId == category_id)
 
   const renderProductItem = ({ item }) => {
     return (
