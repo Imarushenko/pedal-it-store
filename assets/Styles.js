@@ -73,4 +73,9 @@ export default StyleSheet.create({
     margin: "100px",
     color: "#1ABC9C",
   },
+
+  image: {
+    width: "100%",
+    height: 200,
+  },
 });
