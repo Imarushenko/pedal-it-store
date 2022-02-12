@@ -27,11 +27,13 @@ export default function CategoriesScreen({ route, navigation }) {
   };
 
   return (
+    <View>
     <FlatList
       data={displayProductsPerCategory}
       keyExtractor={(item) => item.id}
       renderItem={renderProductItem}
       numColumns={2}
     ></FlatList>
+    </View>
   );
 }

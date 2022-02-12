@@ -3,6 +3,7 @@ import React from "react";
 import { CATEGORIES } from "../data/Dummy-Data";
 import CategoryGridTile from "../components/CategoriesGridTile";
 import { FlatList } from "react-native";
+import styles from "../assets/Styles";
 
 const HomeScreen = ({ navigation }) => {
   const renderGridItem = ({ item }) => {
