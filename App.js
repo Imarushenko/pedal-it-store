@@ -14,7 +14,7 @@
 //     <Navigations></Navigations>)
 // };
 
-import React, { useState } from "react";
+import React from "react";
 import Navigations from "./navigations/Navigations";
 import AppLoading from "expo-app-loading";
 // import { useFonts } from "@expo-google-fonts/Redressed-Regular";

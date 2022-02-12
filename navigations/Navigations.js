@@ -21,7 +21,12 @@ export default function StoreNavigator() {
           component={CategoriesScreen}
         ></Stack.Screen>
 
-        <Stack.Screen name="Product Details" component={ProductsScreen}></Stack.Screen>
+        <Stack.Screen
+          name="Product"
+          component={ProductsScreen}
+        ></Stack.Screen>
+
+
       </Stack.Navigator>
     </NavigationContainer>
   );

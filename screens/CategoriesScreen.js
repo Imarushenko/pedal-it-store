@@ -16,7 +16,7 @@ export default function CategoriesScreen({ route, navigation }) {
         title={item.product_title}
         price={item.price}
         onSelectProduct={() => {
-          navigation.navigate("Product Details", {
+          navigation.navigate("Product", {
             product_id: item.id,
             product_name: item.title,
           });

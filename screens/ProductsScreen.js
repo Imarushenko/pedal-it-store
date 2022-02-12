@@ -1,11 +1,13 @@
 import React from "react";
-import { ScrollView, View } from "react-native-web";
+import { ScrollView, View } from "react-native";
 import { PRODUCTS } from "../data/Dummy-Data";
 import styles from "../assets/Styles";
 
 export default function ProductsScreen({ route }) {
+
+  
   const product_id = route.params.product_id;
-  const current_product = PRODUCTS.find((item) => item.id == product_id);
+  const current_product = PRODUCTS.find((item) => item.id === product_id);
 
   return (
       <View style={styles.container}>
