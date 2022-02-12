@@ -25,7 +25,7 @@ const HomeScreen = ({ navigation }) => {
       keyExtractor={(item, index) => item.id}
       data={CATEGORIES}
       renderItem={renderGridItem}
-      numColumns={3}
+      numColumns={2}
     ></FlatList>
   );
 };

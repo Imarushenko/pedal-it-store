@@ -43,11 +43,11 @@ export default StyleSheet.create({
   },
 
   title: {
-    fontSize: 50,
+    fontSize: 20,
     color: "#FDFEFE",
     textAlign: "center",
     fontWeight: "bold",
-    position: "center",
+    // position: "center",
   },
 
   productTitle: {
