@@ -33,6 +33,8 @@ export default function ProductsScreen({route}) {
           </ScrollView>
       </View>
 
+// tests:
+
   //     <View style={styles.container}>
   //     <ScrollView>
   //         <Image source={{uri: current_product.productImage}} style={styles.image}>
