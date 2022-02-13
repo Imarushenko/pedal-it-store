@@ -18,7 +18,7 @@ export default function CategoriesScreen({ route, navigation }) {
         onSelectProduct={() => {
           navigation.navigate("Product", {
             product_id: item.id,
-            product_name: item.title,
+            product_name: item.product_name,
           });
         }}
         image={item.productImage}

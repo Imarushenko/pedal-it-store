@@ -10,7 +10,7 @@ const Stack = createNativeStackNavigator();
 export default function StoreNavigator() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="Home - Pedal It Store">
+      <Stack.Navigator >
         <Stack.Screen
           name="Home - Pedal It Store"
           component={HomeScreen}
