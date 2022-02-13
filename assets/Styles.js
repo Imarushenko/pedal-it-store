@@ -26,13 +26,14 @@ export default StyleSheet.create({
   container: {
     flex: 1,
     borderRadius: 0,
+    backgroundColor: "white",
     shadowColor: "#CD6155",
     shadowOpacity: 3,
     shadowOffset: { width: 5, height: 5 },
     shadowRadius: 10,
     elevation: 3,
-    justifyContent: "flex-end",
-    alignItems: "flex-end",
+    justifyContent: 'center',
+    alignItems: 'center',
   },
 
   background_image: {
@@ -74,8 +75,12 @@ export default StyleSheet.create({
     color: "#1ABC9C",
   },
 
-  image: {
-    width: "100%",
-    height: 200,
+  centerView: {
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  productImg: {
+    width: "25%",
+    height: 220,
   },
 });

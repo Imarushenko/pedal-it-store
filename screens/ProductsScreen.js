@@ -9,21 +9,12 @@ export default function ProductsScreen({route}) {
   const current_product = PRODUCTS.find((item) => item.id === product_id);
 
   return (
-    // <View style={styles.container}>
-    //   <Text style={styles.productPriceTitle}>
-    //     sdfdsfdsfsdfdsfdsfdsfsdfsdf
-    //   </Text>
-    //   <Text style={styles.productPriceTitle}>
-    //     sdfdsfdsfsdfdsfdsfdsfsdfsdf
-    //   </Text>
-    //   <Text style={styles.productPriceTitle}>
-    //     sdfdsfdsfsdfdsfdsfdsfsdfsdf
-    //   </Text>
-    // </View>
-    
       <View style={styles.container}>
           <ScrollView>
-              <Image source={{uri: current_product.productImage}} style={styles.image}></Image>
+            <View style={styles.centerView}>
+            <Image source={{uri: current_product.productImage}} style={styles.productImg}></Image>
+            </View>
+             
                 <Text style={styles.productPriceTitle}>{current_product.product_title}</Text>
                 <Text style={styles.productPriceTitle}>{current_product.description_paragraph}</Text>
                 <Text style={styles.productPriceTitle}>{current_product.size}</Text>
@@ -32,20 +23,6 @@ export default function ProductsScreen({route}) {
               
           </ScrollView>
       </View>
-
-// tests:
-
-  //     <View style={styles.container}>
-  //     <ScrollView>
-  //         <Image source={{uri: current_product.productImage}} style={styles.image}>
-  //           <Text style={styles.productPriceTitle}>1111111111</Text>
-  //           <Text style={styles.productPriceTitle}>2222222222</Text>
-  //           <Text style={styles.productPriceTitle}>3333333333</Text>
-  //           <Text style={styles}>444444444</Text>
-  //           {/* <Text style={styles.productPriceTitle}>{current_product.shipping}</Text> */}
-  //         </Image>
-  //     </ScrollView>
-  // </View>
   )
 }
 
