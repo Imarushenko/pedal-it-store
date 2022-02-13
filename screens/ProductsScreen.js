@@ -23,13 +23,13 @@ export default function ProductsScreen({route}) {
     
       <View style={styles.container}>
           <ScrollView>
-              {/* <Image source={{uri: current_product.productImage}} style={styles.image}> */}
+              <Image source={{uri: current_product.productImage}} style={styles.image}></Image>
                 <Text style={styles.productPriceTitle}>{current_product.product_title}</Text>
                 <Text style={styles.productPriceTitle}>{current_product.description_paragraph}</Text>
                 <Text style={styles.productPriceTitle}>{current_product.size}</Text>
                 <Text style={styles.tiproductPriceTitletle}>{current_product.shipping}</Text>
                 <Text style={styles.productPriceTitle}>{current_product.shipping}</Text>
-              {/* </Image> */}
+              
           </ScrollView>
       </View>
 
