@@ -75,12 +75,61 @@ export default StyleSheet.create({
     color: "#1ABC9C",
   },
 
+  // product details style
+  productDetailsText: {
+    fontSize: 20,
+    position: "relative",
+    padding: "10px",
+    color: "black",
+    textAlign: "left",
+    fontWeight: "bold",
+    margin: "10px",
+    color: "#900C3F",
+  },
+
   centerView: {
     justifyContent: 'center',
     alignItems: 'center',
   },
+
   productImg: {
-    width: "25%",
+    width: "30%",
     height: 220,
   },
+
+  viewDivProductDetails: {
+    
+      flex: 0.3,
+      backgroundColor: "#DAF7A6",
+      borderWidth: 5,
+      borderRadius: 10,
+      margin: 10,
+      width: "50%"
+  },
+
+  viewDivProductDetailDesription: {
+    
+    flex: 0.4,
+    backgroundColor: "#DAF7A6",
+    borderWidth: 5,
+    borderRadius: 10,
+    margin: 10,
+    height: 500,
+    width: "75%",
+},
+
+  productDetailsContainer: {
+    flex: 1,
+    borderRadius: 0,
+    backgroundColor: "#900C3F",
+    shadowColor: "#CD6155",
+    shadowOpacity: 3,
+    shadowOffset: { width: 5, height: 5 },
+    shadowRadius: 10,
+    elevation: 3,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+
+  
 });

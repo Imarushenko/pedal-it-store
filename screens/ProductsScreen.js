@@ -9,17 +9,17 @@ export default function ProductsScreen({route}) {
   const current_product = PRODUCTS.find((item) => item.id === product_id);
 
   return (
-      <View style={styles.container}>
+      <View style={styles.productDetailsContainer}>
           <ScrollView>
-            <View style={styles.centerView}>
+            <View style={[styles.centerView, styles.container]}>
             <Image source={{uri: current_product.productImage}} style={styles.productImg}></Image>
             </View>
-             
-                <Text style={styles.productPriceTitle}>{"Product: " + current_product.product_title}</Text>
-                <Text style={styles.productPriceTitle}>{current_product.description_paragraph}</Text>
-                <Text style={styles.productPriceTitle}>{current_product.size}</Text>
-                <Text style={styles.tiproductPriceTitletle}>{current_product.shipping}</Text>
-                <Text style={styles.productPriceTitle}>{current_product.shipping}</Text>
+             <View style={styles.viewDivProductDetails}><Text style={styles.productDetailsText}>{"Product:       " + current_product.product_title}</Text></View>
+             <View style={styles.viewDivProductDetailDesription}><Text style={styles.productDetailsText}>{current_product.description_paragraph}</Text></View>    
+                <View style={[styles.viewDivProductDetails, {width: 200} ]}> <Text style={styles.productDetailsText}>{"Bike Size:      " + current_product.size}</Text></View>
+
+              <View style={styles.viewDivProductDetails}><Text style={styles.productDetailsText}>{"Shipping Price:      "+current_product.shipping}</Text></View>
+                
               
           </ScrollView>
       </View>
