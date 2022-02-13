@@ -15,7 +15,7 @@ export default function ProductsScreen({route}) {
             <Image source={{uri: current_product.productImage}} style={styles.productImg}></Image>
             </View>
              
-                <Text style={styles.productPriceTitle}>{current_product.product_title}</Text>
+                <Text style={styles.productPriceTitle}>{"Product: " + current_product.product_title}</Text>
                 <Text style={styles.productPriceTitle}>{current_product.description_paragraph}</Text>
                 <Text style={styles.productPriceTitle}>{current_product.size}</Text>
                 <Text style={styles.tiproductPriceTitletle}>{current_product.shipping}</Text>
