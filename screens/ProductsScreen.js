@@ -1,7 +1,8 @@
 import React from "react";
-import {  View, ScrollView, Image, Text, TouchableOpacity } from "react-native";
+import {  View, ScrollView, Image, Text, TouchableOpacity, Button } from "react-native";
 import { PRODUCTS } from "../data/Dummy-Data";
 import styles from "../assets/Styles";
+
 
 export default function ProductsScreen({route, navigation}) {
 
@@ -11,14 +12,14 @@ export default function ProductsScreen({route, navigation}) {
   return (
       <View style={[styles.productDetailsContainer, {width: "100%"}]}>
           <ScrollView>
-            <View style={[styles.container]}>
+            <View style={styles.container}>
             <Image source={{uri: current_product.productImage}} style={styles.productImg}></Image>
             <Text style={{fontSize: 20, fontWeight: "bold", padding: 10}}>{current_product.product_title}</Text>
             </View>
             <Text style={[styles.productDetailsText, {color: "white", marginTop: 5} ]}>Product's Description:</Text>
              <View style={[styles.viewDivProductDetails, styles.centerView]}><Text style={styles.productDetailsText}>{current_product.description_paragraph}</Text></View>    
              <Text style={[styles.productDetailsText, {color: "white", textAlign: "left", marginTop: 5} ]}>Product's Size:</Text>
-                <View style={[styles.viewDivProductDetails, {width: 160} ]}> <Text style={styles.productDetailsText}>{"Bike Size: " + current_product.size}</Text></View>
+                <View style={[styles.viewDivProductDetails, {width: 160} ]}> <Text style={styles.productDetailsText}>{"Size: " + current_product.size}</Text></View>
                 <Text style={[styles.productDetailsText, {color: "white", textAlign: "left", marginTop: 5} ]}>Product's Shipping Price:</Text>
               <View style={[styles.viewDivProductDetails, {width: 250}]}><Text style={styles.productDetailsText}>{"Shipping Price: "+current_product.shipping + "$"}</Text></View>
               <Text style={[styles.productDetailsText, {color: "white", textAlign: "left", marginTop: 5} ]}>Product's Total Cost:</Text>
@@ -27,8 +28,18 @@ export default function ProductsScreen({route, navigation}) {
             
 
             <View style={styles.centerView}>
-              <TouchableOpacity>
+              <TouchableOpacity onPress={() => {
+                // add(current_product)
+                navigation.navigate("Your Cart", {
+                  product_id: current_product.id,
+                  product_name: current_product.product_title
+                  
+                });
                 
+              }}>
+                {/* <Icon name="cartIcon" style={styles.cartIcon}></Icon>
+                <Text style={styles.productTitle}>Add To Cart</Text> */}
+                <Button>press</Button>
               </TouchableOpacity>
             </View>
               

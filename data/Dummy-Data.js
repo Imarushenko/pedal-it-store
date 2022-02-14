@@ -300,7 +300,7 @@ export const PRODUCTS = [
     ["cat6"],
     "https://pictures.ssg-service.com/272/2728211008280_1501131_png_overview_14.png",
     "SCOTT PROSPECT GOGGLE",
-    "Massive field of vision. The SCOTT Prospect Light Sensitive Goggle is an absolute highlight among off-road and motocross goggles. It gives the rider a",
+    "Massive field of vision. The SCOTT Prospect Light Sensitive Goggle is an absolute highlight among off-road and motocross goggles.",
     "XL",
     499.0,
     0.0

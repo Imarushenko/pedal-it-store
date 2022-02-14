@@ -101,9 +101,10 @@ export default StyleSheet.create({
       flex: 0.2,
       // backgroundColor: "#DAF7A6",
       backgroundColor: "white",
-      borderWidth: 5,
+      borderWidth: 4,
       borderRadius: 10,
-      margin: 10,
+      marginLeft: 10,
+      marginRight: 10,
       borderColor: "#82E0AA",
 
   },
@@ -126,5 +127,13 @@ export default StyleSheet.create({
     // justifyContent: 'center',
     // alignItems: 'center',
   },
+
+
+  // cart style
+  cartIcon: {
+    fontSize: 20,
+    color: "#900C3F"
+
+  }
   
 });
