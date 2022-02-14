@@ -1,9 +1,9 @@
 import React from "react";
-import {  View, ScrollView, Image, Text } from "react-native";
+import {  View, ScrollView, Image, Text, TouchableOpacity } from "react-native";
 import { PRODUCTS } from "../data/Dummy-Data";
 import styles from "../assets/Styles";
 
-export default function ProductsScreen({route}) {
+export default function ProductsScreen({route, navigation}) {
 
   const product_id = route.params.product_id;
   const current_product = PRODUCTS.find((item) => item.id === product_id);
@@ -26,7 +26,11 @@ export default function ProductsScreen({route}) {
                 
             
 
-            
+            <View style={styles.centerView}>
+              <TouchableOpacity>
+                
+              </TouchableOpacity>
+            </View>
               
           </ScrollView>
 </View>
