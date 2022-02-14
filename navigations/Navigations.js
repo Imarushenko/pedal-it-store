@@ -22,7 +22,7 @@ export default function StoreNavigator() {
         ></Stack.Screen>
 
         <Stack.Screen
-          name="Product"
+          name="Product Description"
           component={ProductsScreen}
         ></Stack.Screen>
 

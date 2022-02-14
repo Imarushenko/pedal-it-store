@@ -66,13 +66,14 @@ export default StyleSheet.create({
 
   productPriceTitle: {
     fontSize: 20,
-    position: "relative",
     padding: "10px",
     color: "black",
-    textAlign: "right",
     fontWeight: "bold",
-    margin: "100px",
+    margin: "10px",
     color: "#1ABC9C",
+    position: "absolute",
+    bottom: 0,
+    right: 0
   },
 
   // product details style
@@ -81,9 +82,8 @@ export default StyleSheet.create({
     position: "relative",
     padding: "10px",
     color: "black",
-    textAlign: "left",
+    textAlign: "center",
     fontWeight: "bold",
-    margin: "10px",
     color: "#900C3F",
   },
 
@@ -98,38 +98,33 @@ export default StyleSheet.create({
   },
 
   viewDivProductDetails: {
-    
-      flex: 0.3,
-      backgroundColor: "#DAF7A6",
+      flex: 0.2,
+      // backgroundColor: "#DAF7A6",
+      backgroundColor: "white",
       borderWidth: 5,
       borderRadius: 10,
       margin: 10,
-      width: "50%"
+      borderColor: "#82E0AA",
+
   },
 
-  viewDivProductDetailDesription: {
+//   viewDivProductDetailDesription: {
     
-    flex: 0.4,
-    backgroundColor: "#DAF7A6",
-    borderWidth: 5,
-    borderRadius: 10,
-    margin: 10,
-    height: 500,
-    width: "75%",
-},
+//     flex: 0.4,
+//     backgroundColor: "#DAF7A6",
+//     borderWidth: 5,
+//     borderRadius: 10,
+//     margin: 10,
+//     height: 500,
+//     width: "75%",
+// },
 
   productDetailsContainer: {
     flex: 1,
     borderRadius: 0,
     backgroundColor: "#900C3F",
-    shadowColor: "#CD6155",
-    shadowOpacity: 3,
-    shadowOffset: { width: 5, height: 5 },
-    shadowRadius: 10,
-    elevation: 3,
-    justifyContent: 'center',
-    alignItems: 'center',
+    // justifyContent: 'center',
+    // alignItems: 'center',
   },
-
   
 });

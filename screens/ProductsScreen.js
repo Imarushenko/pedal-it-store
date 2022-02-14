@@ -7,22 +7,30 @@ export default function ProductsScreen({route}) {
 
   const product_id = route.params.product_id;
   const current_product = PRODUCTS.find((item) => item.id === product_id);
-
+  let totalPtrice = current_product.price + current_product.shipping;
   return (
-      <View style={styles.productDetailsContainer}>
+      <View style={[styles.productDetailsContainer, {width: "100%"}]}>
           <ScrollView>
-            <View style={[styles.centerView, styles.container]}>
+            <View style={[styles.container]}>
             <Image source={{uri: current_product.productImage}} style={styles.productImg}></Image>
+            <Text style={{fontSize: 20, fontWeight: "bold", padding: 10}}>{current_product.product_title}</Text>
             </View>
-             <View style={styles.viewDivProductDetails}><Text style={styles.productDetailsText}>{"Product:       " + current_product.product_title}</Text></View>
-             <View style={styles.viewDivProductDetailDesription}><Text style={styles.productDetailsText}>{current_product.description_paragraph}</Text></View>    
-                <View style={[styles.viewDivProductDetails, {width: 200} ]}> <Text style={styles.productDetailsText}>{"Bike Size:      " + current_product.size}</Text></View>
-
-              <View style={styles.viewDivProductDetails}><Text style={styles.productDetailsText}>{"Shipping Price:      "+current_product.shipping}</Text></View>
+            <Text style={[styles.productDetailsText, {color: "white", marginTop: 5} ]}>Product's Description:</Text>
+             <View style={[styles.viewDivProductDetails, styles.centerView]}><Text style={styles.productDetailsText}>{current_product.description_paragraph}</Text></View>    
+             <Text style={[styles.productDetailsText, {color: "white", textAlign: "left", marginTop: 5} ]}>Product's Size:</Text>
+                <View style={[styles.viewDivProductDetails, {width: 160} ]}> <Text style={styles.productDetailsText}>{"Bike Size: " + current_product.size}</Text></View>
+                <Text style={[styles.productDetailsText, {color: "white", textAlign: "left", marginTop: 5} ]}>Product's Shipping Price:</Text>
+              <View style={[styles.viewDivProductDetails, {width: 250}]}><Text style={styles.productDetailsText}>{"Shipping Price: "+current_product.shipping + "$"}</Text></View>
+              <Text style={[styles.productDetailsText, {color: "white", textAlign: "left", marginTop: 5} ]}>Product's Total Cost:</Text>
+              <View style={[styles.viewDivProductDetails, {width: 225}]}><Text style={styles.productDetailsText}>{"Total Price: "+ totalPtrice + "$"}</Text></View>
                 
+            
+
+            
               
           </ScrollView>
-      </View>
+</View>
+
   )
 }
 

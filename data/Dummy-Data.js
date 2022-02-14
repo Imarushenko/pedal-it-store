@@ -65,7 +65,7 @@ export const PRODUCTS = [
     ["cat1"],
     "https://pictures.ssg-service.com/286/286603_1795668_png_overview_4.png",
     "SCOTT RANSOM 600 BIKE",
-    "The SCOTT Ransom 600 is the fast and capable mountain bike for kids that dreams are made of.",
+    "The SCOTT Ransom 600 is the fast and capable mountain bike for kids that dreams are made of. mountain bike features 170mm of trail munchin', climb crushing.",
     "XL",
     6999.0,
     300.0
@@ -266,7 +266,7 @@ export const PRODUCTS = [
     "proc21",
     ["cat6"],
     "https://pictures.ssg-service.com/281/2813927265_1799789_png_overview_2.png",
-    "SCOTT CENTRIC+ HELMET",
+    "SCOTT+ HELMET",
     "Our Supersonic Collection of products was developed with one thing in mind - pure race speed. The SCOTT Centric Plus was designed and developed for our world-class road and mountain bike racers.",
     "S",
     199.0,
@@ -278,7 +278,7 @@ export const PRODUCTS = [
     ["cat6"],
     "https://pictures.ssg-service.com/275/2751981035_1799760_png_overview_2.png",
     "SCOTT ARX (CE) HELMET",
-    "In-Mold TechnologyPolycarbonate Micro Shell",
+    "In-Mold TechnologyPolycarbonate Micro Shell, Everything we've learned from our high-end racing helmets has trickled down to the SCOTT Arx Plus - a versatile all-rounder. The SCOTT Nero Plus is our flagship full-face helmet that seamlessly.",
     "L",
     299.0,
     39.0
@@ -289,7 +289,7 @@ export const PRODUCTS = [
     ["cat6"],
     "https://pictures.ssg-service.com/281/2811945024_1695606_png_overview_10.png",
     "SCOTT ROAD RC SHOE",
-    "Mesh/microfiber upper",
+    "Mesh/microfiber upper. Our Supersonic Collection of products was developed with one thing in mind - pure race speed. that offers maximum stiffness and minimal weight.",
     "M",
     99.0,
     59.0
@@ -300,7 +300,7 @@ export const PRODUCTS = [
     ["cat6"],
     "https://pictures.ssg-service.com/272/2728211008280_1501131_png_overview_14.png",
     "SCOTT PROSPECT GOGGLE",
-    "Massive field of vision",
+    "Massive field of vision. The SCOTT Prospect Light Sensitive Goggle is an absolute highlight among off-road and motocross goggles. It gives the rider a",
     "XL",
     499.0,
     0.0
