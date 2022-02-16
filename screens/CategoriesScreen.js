@@ -2,7 +2,7 @@
 import React from "react";
 import { View, FlatList } from "react-native";
 import { PRODUCTS } from "../data/Dummy-Data";
-import ProductsItem from "../components/ProductsGridTile";
+import ProductsItem from "../components/ProductsComponent";
 
 export default function CategoriesScreen({ route, navigation }) {
   const category_id = route.params.category_id;
@@ -28,12 +28,12 @@ export default function CategoriesScreen({ route, navigation }) {
 
   return (
     <View>
-    <FlatList
-      data={displayProductsPerCategory}
-      keyExtractor={(item) => item.id}
-      renderItem={renderProductItem}
-      numColumns={2}
-    ></FlatList>
+      <FlatList
+        data={displayProductsPerCategory}
+        keyExtractor={(item) => item.id}
+        renderItem={renderProductItem}
+        numColumns={2}
+      ></FlatList>
     </View>
   );
 }

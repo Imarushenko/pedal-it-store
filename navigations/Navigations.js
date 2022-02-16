@@ -4,14 +4,14 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import HomeScreen from "../screens/HomeScreen";
 import CategoriesScreen from "../screens/CategoriesScreen";
 import ProductsScreen from "../screens/ProductsScreen";
-import CartScreen from "../screens/CartScreen"
+import CartScreen from "../screens/CartScreen";
 
 const Stack = createNativeStackNavigator();
 
 export default function StoreNavigator() {
   return (
     <NavigationContainer>
-      <Stack.Navigator >
+      <Stack.Navigator>
         <Stack.Screen
           name="Home - Pedal It Store"
           component={HomeScreen}
@@ -27,12 +27,7 @@ export default function StoreNavigator() {
           component={ProductsScreen}
         ></Stack.Screen>
 
-        <Stack.Screen
-          name="Your Cart"
-          component={CartScreen}
-        ></Stack.Screen>
-
-
+        <Stack.Screen name="Your Cart" component={CartScreen}></Stack.Screen>
       </Stack.Navigator>
     </NavigationContainer>
   );

@@ -9,7 +9,6 @@ class Product {
         this.size = size;
         this.price = price;
         this.shipping = shipping;
-        // this.review = review; TODO reviews
     }
 }
 

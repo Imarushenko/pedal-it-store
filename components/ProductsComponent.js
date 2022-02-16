@@ -4,7 +4,6 @@ import { View, Text, TouchableOpacity, ImageBackground } from "react-native";
 import styles from "../assets/Styles";
 
 const ProductsItem = (props) => {
-  // onSelectProduct refers to product screen>
   return (
     <TouchableOpacity
       style={styles.productGridItem}

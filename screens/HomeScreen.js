@@ -1,7 +1,7 @@
 // imports
 import React from "react";
 import { CATEGORIES } from "../data/Dummy-Data";
-import CategoryGridTile from "../components/CategoriesGridTile";
+import CategoryGridTile from "../components/CategoriesComponent";
 import { FlatList } from "react-native";
 
 const HomeScreen = ({ navigation }) => {
@@ -25,7 +25,7 @@ const HomeScreen = ({ navigation }) => {
       keyExtractor={(item, index) => item.id}
       data={CATEGORIES}
       renderItem={renderGridItem}
-      numColumns={2}
+      numColumns={1}
     ></FlatList>
   );
 };
