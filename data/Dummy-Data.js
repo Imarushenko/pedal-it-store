@@ -36,7 +36,8 @@ export const CATEGORIES = [
   ),
 ];
 
-// TODO reviews
+
+
 // products
 export const PRODUCTS = [
   // enduro bikes products
