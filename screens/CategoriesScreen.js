@@ -2,7 +2,7 @@
 import React from "react";
 import { View, FlatList } from "react-native";
 import { PRODUCTS } from "../data/Dummy-Data";
-import ProductsItem from "../components/ProductsComponent";
+import ProductComponent from "../components/ProductsComponent";
 
 export default function CategoriesScreen({ route, navigation }) {
   const category_id = route.params.category_id;
@@ -12,7 +12,7 @@ export default function CategoriesScreen({ route, navigation }) {
 
   const renderProductItem = ({ item }) => {
     return (
-      <ProductsItem
+      <ProductComponent
         title={item.product_title}
         price={item.price}
         onSelectProduct={() => {
@@ -22,7 +22,7 @@ export default function CategoriesScreen({ route, navigation }) {
           });
         }}
         image={item.productImage}
-      ></ProductsItem>
+      ></ProductComponent>
     );
   };
 

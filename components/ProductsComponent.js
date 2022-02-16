@@ -3,7 +3,7 @@ import React from "react";
 import { View, Text, TouchableOpacity, ImageBackground } from "react-native";
 import styles from "../assets/Styles";
 
-const ProductsItem = (props) => {
+const ProductComponent = (props) => {
   return (
     <TouchableOpacity
       style={styles.productGridItem}
@@ -28,4 +28,4 @@ const ProductsItem = (props) => {
   );
 };
 
-export default ProductsItem;
+export default ProductComponent;

@@ -7,8 +7,9 @@ import {
   TouchableOpacity,
   Button,
 } from "react-native";
-import { PRODUCTS } from "../data/Dummy-Data";
+import { PRODUCTS, CART } from "../data/Dummy-Data";
 import styles from "../assets/Styles";
+import { MaterialCommunityIcons as Icon } from "react-native-vector-icons";
 
 export default function ProductsScreen({ route, navigation }) {
   const product_id = route.params.product_id;
@@ -17,7 +18,7 @@ export default function ProductsScreen({ route, navigation }) {
   return (
     <View style={[styles.productDetailsContainer, { width: "100%" }]}>
       <ScrollView>
-        <View style={styles.container}>
+         <View style={styles.container}>
           <Image
             source={{ uri: current_product.productImage }}
             style={styles.productImg}
@@ -45,7 +46,6 @@ export default function ProductsScreen({ route, navigation }) {
           Product's Size:
         </Text>
         <View style={[styles.viewDivProductDetails, { width: 160 }]}>
-          {" "}
           <Text style={styles.productDetailsText}>
             {"Size: " + current_product.size}
           </Text>
@@ -57,7 +57,7 @@ export default function ProductsScreen({ route, navigation }) {
           ]}
         >
           Product's Shipping Price:
-        </Text>
+        </Text> 
         <View style={[styles.viewDivProductDetails, { width: 250 }]}>
           <Text style={styles.productDetailsText}>
             {"Shipping Price: " + current_product.shipping + "$"}
@@ -78,16 +78,19 @@ export default function ProductsScreen({ route, navigation }) {
         </View>
 
         <View style={styles.centerView}>
+         
           <TouchableOpacity
             onPress={() => {
-              navigation.navigate("Your Cart", {
-                product_id: current_product.id,
-                product_name: current_product.product_title,
-              });
+              // <Text>TEST</Text>
+              console.log("On press = Cart Screen");
+              CART.push(current_product);
+              console.log(CART);
+              navigation.navigate("Your Cart");
             }}
           >
-            {/* <Icon name="cartIcon" style={styles.cartIcon}></Icon>
-                <Text style={styles.productTitle}>Add To Cart</Text> */}
+            <Text style={{color:"white"}}>Add To Cart</Text>
+            <Icon name="cart" style={styles.cartIcon}></Icon>
+
             <Button>press</Button>
           </TouchableOpacity>
         </View>

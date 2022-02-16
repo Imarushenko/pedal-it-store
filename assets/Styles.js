@@ -131,8 +131,8 @@ export default StyleSheet.create({
 
   // cart style
   cartIcon: {
-    fontSize: 20,
-    color: "#900C3F"
+    fontSize: 30,
+    color: "white"
 
   }
   

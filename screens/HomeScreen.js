@@ -1,13 +1,14 @@
 // imports
 import React from "react";
 import { CATEGORIES } from "../data/Dummy-Data";
-import CategoryGridTile from "../components/CategoriesComponent";
+import CategoryComponent from "../components/CategoriesComponent";
 import { FlatList } from "react-native";
+import Styles from "../assets/Styles";
 
 const HomeScreen = ({ navigation }) => {
   const renderGridItem = ({ item }) => {
     return (
-      <CategoryGridTile
+      <CategoryComponent
         title={item.categoryName}
         onSelect={() => {
           navigation.navigate("Products - Total Items: 4", {
@@ -16,7 +17,7 @@ const HomeScreen = ({ navigation }) => {
           });
         }}
         image={item.categoryImage}
-      ></CategoryGridTile>
+      ></CategoryComponent>
     );
   };
 
@@ -25,7 +26,7 @@ const HomeScreen = ({ navigation }) => {
       keyExtractor={(item, index) => item.id}
       data={CATEGORIES}
       renderItem={renderGridItem}
-      numColumns={1}
+      numColumns={2}
     ></FlatList>
   );
 };

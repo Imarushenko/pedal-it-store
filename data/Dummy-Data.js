@@ -36,7 +36,8 @@ export const CATEGORIES = [
   ),
 ];
 
-
+// cart
+export let CART = [];
 
 // products
 export const PRODUCTS = [

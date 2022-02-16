@@ -3,7 +3,7 @@ import React from "react";
 import { View, Text, TouchableOpacity, ImageBackground } from "react-native";
 import styles from "../assets/Styles";
 
-const CategoryGridTile = (props) => {
+const CategoryComponent = (props) => {
   return (
     <TouchableOpacity style={styles.gridItem} onPress={props.onSelect}>
       <View style={styles.container}>
@@ -21,4 +21,4 @@ const CategoryGridTile = (props) => {
   );
 };
 
-export default CategoryGridTile;
+export default CategoryComponent;
