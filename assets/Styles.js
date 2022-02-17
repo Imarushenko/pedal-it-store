@@ -15,14 +15,6 @@ export default StyleSheet.create({
     height: 370,
   },
 
-  // productGridItem: {
-  //   backgroundColor: "#FDFEFE",
-  //   flex: 1,
-  //   width: "250px",
-  //   margin: 25,
-  //   height: "250px",
-  // },
-
   container: {
     flex: 1,
     borderRadius: 0,
@@ -61,7 +53,6 @@ export default StyleSheet.create({
     color: "#FDFEFE",
     textAlign: "center",
     fontWeight: "bold",
-    // position: "center",
   },
 
   productTitle: {
@@ -92,7 +83,6 @@ export default StyleSheet.create({
   // product details style
   productDetailsText: {
     fontSize: 20,
-    // position: "relative",
     margin: 3,
     marginLeft: 8,
     padding: 2,
@@ -125,35 +115,10 @@ export default StyleSheet.create({
     height: 200,
   },
 
-  // viewProductDescription: {
-  //   backgroundColor: "white",
-  //   borderWidth: 4,
-  //   borderRadius: 7,
-  //   marginLeft: 10,
-  //   marginRight: 10,
-  //   borderColor: "#82E0AA",
-  //   height: 550,
-  //   width: "96.5%",
-  //   height: 200,
-  // },
-
-  //   viewDivProductDetailDesription: {
-
-  //     flex: 0.4,
-  //     backgroundColor: "#DAF7A6",
-  //     borderWidth: 5,
-  //     borderRadius: 10,
-  //     margin: 10,
-  //     height: 500,
-  //     width: "75%",
-  // },
-
   productDetailsContainer: {
     flex: 1,
     borderRadius: 0,
     backgroundColor: "#900C3F",
-    // justifyContent: 'center',
-    // alignItems: 'center',
   },
 
   // cart style
@@ -163,15 +128,27 @@ export default StyleSheet.create({
   },
 
   cartTitleText: {
-    color: "black",
+    color: "blue",
     fontSize: 25,
     fontWeight: "bold",
-    margin: 15,
+    // margin: 10,
     textAlign: "center",
   },
 
   cartView: {
     margin: 10,
-    height: 120,
+    width: "90%",
+    height: 320,
+    marginLeft: 50
   },
+
+  textInput: {
+    width: "95%",
+    height: 50,
+    borderWidth: 4,
+    borderColor: "white",
+    margin: 10,
+    borderRadius: 5,
+    alignContent: "center"
+  }
 });

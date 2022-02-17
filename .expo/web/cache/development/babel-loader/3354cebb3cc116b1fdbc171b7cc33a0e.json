@@ -1,0 +1,1 @@
+{"ast":null,"code":"var _reactJsxRuntime = require(\"react/jsx-runtime\");\n\n_reactJsxRuntime.jsx(Text, {\n  children: \"Test\"\n});","map":{"version":3,"sources":["C:/pedal-it-store/screens/PaymentScreen.js"],"names":[],"mappings":";;AACA,qBAAC,IAAD;AAAA;AAAA","sourcesContent":["\r\n<Text>Test</Text>"]},"metadata":{},"sourceType":"script"}

@@ -1,0 +1,1 @@
+{"ast":null,"code":"var _reactJsxRuntime = require(\"react/jsx-runtime\");\n\n_reactJsxRuntime.jsx(Text, {});","map":{"version":3,"sources":["C:/pedal-it-store/screens/PaymentScreen.js"],"names":[],"mappings":";;AACA,qBAAC,IAAD","sourcesContent":["\r\n<Text></Text>"]},"metadata":{},"sourceType":"script"}

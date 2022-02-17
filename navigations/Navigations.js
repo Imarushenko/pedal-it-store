@@ -6,6 +6,7 @@ import CategoriesScreen from "../screens/CategoriesScreen";
 import ProductsScreen from "../screens/ProductsScreen";
 import CartScreen from "../screens/CartScreen";
 
+
 const Stack = createNativeStackNavigator();
 
 export default function StoreNavigator() {
@@ -28,6 +29,7 @@ export default function StoreNavigator() {
         ></Stack.Screen>
 
         <Stack.Screen name="Your Cart" component={CartScreen}></Stack.Screen>
+
       </Stack.Navigator>
     </NavigationContainer>
   );
