@@ -1,12 +1,5 @@
 import React from "react";
-import {
-  View,
-  ScrollView,
-  Image,
-  Text,
-  TouchableOpacity,
-  Button,
-} from "react-native";
+import { View, ScrollView, Image, Text, TouchableOpacity } from "react-native";
 import { PRODUCTS, CART } from "../data/Dummy-Data";
 import styles from "../assets/Styles";
 import { MaterialCommunityIcons as Icon } from "react-native-vector-icons";
@@ -15,10 +8,11 @@ export default function ProductsScreen({ route, navigation }) {
   const product_id = route.params.product_id;
   const current_product = PRODUCTS.find((item) => item.id === product_id);
   let totalPtrice = current_product.price + current_product.shipping;
+
   return (
     <View style={[styles.productDetailsContainer, { width: "100%" }]}>
       <ScrollView>
-         <View style={styles.container}>
+        <View style={styles.container}>
           <Image
             source={{ uri: current_product.productImage }}
             style={styles.productImg}
@@ -32,7 +26,7 @@ export default function ProductsScreen({ route, navigation }) {
         >
           Product's Description:
         </Text>
-        <View style={[styles.viewDivProductDetails, styles.centerView]}>
+        <View style={[styles.viewDivProductDetails]}>
           <Text style={styles.productDetailsText}>
             {current_product.description_paragraph}
           </Text>
@@ -45,7 +39,9 @@ export default function ProductsScreen({ route, navigation }) {
         >
           Product's Size:
         </Text>
-        <View style={[styles.viewDivProductDetails, { width: 160 }]}>
+        <View
+          style={[styles.viewDivProductDetails, { width: 125, height: 60 }]}
+        >
           <Text style={styles.productDetailsText}>
             {"Size: " + current_product.size}
           </Text>
@@ -57,8 +53,10 @@ export default function ProductsScreen({ route, navigation }) {
           ]}
         >
           Product's Shipping Price:
-        </Text> 
-        <View style={[styles.viewDivProductDetails, { width: 250 }]}>
+        </Text>
+        <View
+          style={[styles.viewDivProductDetails, { width: 250, height: 60 }]}
+        >
           <Text style={styles.productDetailsText}>
             {"Shipping Price: " + current_product.shipping + "$"}
           </Text>
@@ -71,33 +69,78 @@ export default function ProductsScreen({ route, navigation }) {
         >
           Product's Total Cost:
         </Text>
-        <View style={[styles.viewDivProductDetails, { width: 225 }]}>
+        <View
+          style={[styles.viewDivProductDetails, { width: 225, height: 60 }]}
+        >
           <Text style={styles.productDetailsText}>
             {"Total Price: " + totalPtrice + "$"}
           </Text>
         </View>
 
+        <Text
+          style={[
+            styles.productDetailsText,
+            { color: "white", textAlign: "left", marginTop: 5 },
+          ]}
+        >
+          Product's Review:
+        </Text>
+        <View>
+          <Text
+            style={[
+              {
+                fontSize: 45,
+                fontWeight: "bold",
+                marginLeft: 10,
+                color: "white",
+              },
+            ]}
+          >
+            <Icon name="star" size={40} color="white"></Icon>
+            {" " + current_product.review}
+          </Text>
+        </View>
+
         <View style={styles.centerView}>
-         
           <TouchableOpacity
             onPress={() => {
-              // <Text>TEST</Text>
-              console.log("On press = Cart Screen");
               CART.push(current_product);
-              console.log(CART);
+            }}
+          >
+            <Text
+              style={[
+                styles.centerView,
+                { color: "white", fontWeight: "bold", fontSize: 25, textAlign: "center" },
+              ]}
+            >
+              Add To Cart
+            </Text>
+            <Icon name="cart" size={55} color="white" style={{textAlign: "center"}}></Icon>
+          </TouchableOpacity>
+        </View>
+
+        <View style={[styles.centerView, { margin: 17 }]}>
+          <TouchableOpacity
+            onPress={() => {
               navigation.navigate("Your Cart");
             }}
           >
-            <Text style={{color:"white"}}>Add To Cart</Text>
-            <Icon name="cart" style={styles.cartIcon}></Icon>
-
-            <Button>press</Button>
+            <Text
+              style={[
+                styles.centerView,
+                {
+                  color: "white",
+                  fontWeight: "bold",
+                  margin: 15,
+                  fontSize: 20,
+                },
+              ]}
+            >
+              Go To The Cart
+            </Text>
           </TouchableOpacity>
         </View>
       </ScrollView>
     </View>
   );
 }
-
-// add view and new styles to every element (Text)
-//  TODO View between Image and contain Text

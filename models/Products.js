@@ -1,6 +1,6 @@
 // products class
 class Product {
-    constructor(id, categoryId, productImage, product_title, description_paragraph, size, price, shipping) {
+    constructor(id, categoryId, productImage, product_title, description_paragraph, size, price, shipping, review) {
         this.id = id;
         this.categoryId = categoryId;
         this.productImage = productImage;
@@ -9,6 +9,7 @@ class Product {
         this.size = size;
         this.price = price;
         this.shipping = shipping;
+        this.review = review;
     }
 }
 

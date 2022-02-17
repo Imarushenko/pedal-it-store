@@ -15,13 +15,13 @@ export default StyleSheet.create({
     height: 370,
   },
 
-  productGridItem: {
-    backgroundColor: "#FDFEFE",
-    flex: 1,
-    width: "250px",
-    margin: 25,
-    height: "250px",
-  },
+  // productGridItem: {
+  //   backgroundColor: "#FDFEFE",
+  //   flex: 1,
+  //   width: "250px",
+  //   margin: 25,
+  //   height: "250px",
+  // },
 
   container: {
     flex: 1,
@@ -29,11 +29,24 @@ export default StyleSheet.create({
     backgroundColor: "white",
     shadowColor: "#CD6155",
     shadowOpacity: 3,
-    shadowOffset: { width: 5, height: 5 },
+    shadowOffset: { width: 7, height: 6 },
     shadowRadius: 10,
     elevation: 3,
-    justifyContent: 'center',
-    alignItems: 'center',
+    justifyContent: "center",
+    alignItems: "center",
+  },
+
+  containerOfProducts: {
+    flex: 1,
+    borderRadius: 0,
+    backgroundColor: "white",
+    shadowColor: "#27AE60",
+    shadowOpacity: 3,
+    shadowOffset: { width: 7, height: 6 },
+    shadowRadius: 10,
+    elevation: 3,
+    justifyContent: "center",
+    alignItems: "center",
   },
 
   background_image: {
@@ -73,52 +86,67 @@ export default StyleSheet.create({
     color: "#1ABC9C",
     position: "absolute",
     bottom: 0,
-    right: 0
+    right: 0,
   },
 
   // product details style
   productDetailsText: {
     fontSize: 20,
-    position: "relative",
-    padding: "10px",
-    color: "black",
+    // position: "relative",
+    margin: 3,
+    marginLeft: 8,
+    padding: 2,
+    color: "white",
     textAlign: "center",
     fontWeight: "bold",
     color: "#900C3F",
   },
 
   centerView: {
-    justifyContent: 'center',
-    alignItems: 'center',
+    justifyContent: "center",
+    alignItems: "center",
   },
 
   productImg: {
-    width: "30%",
+    width: "40%",
     height: 220,
   },
 
   viewDivProductDetails: {
-      flex: 0.2,
-      // backgroundColor: "#DAF7A6",
-      backgroundColor: "white",
-      borderWidth: 4,
-      borderRadius: 10,
-      marginLeft: 10,
-      marginRight: 10,
-      borderColor: "#82E0AA",
-
+    backgroundColor: "white",
+    borderWidth: 6,
+    borderRadius: 7,
+    margin: 10,
+    // marginLeft: 2, 
+    padding: 2,
+    borderColor: "black",
+    height: 350,
+    width: "96.5%",
+    height: 200,
   },
 
-//   viewDivProductDetailDesription: {
-    
-//     flex: 0.4,
-//     backgroundColor: "#DAF7A6",
-//     borderWidth: 5,
-//     borderRadius: 10,
-//     margin: 10,
-//     height: 500,
-//     width: "75%",
-// },
+  // viewProductDescription: {
+  //   backgroundColor: "white",
+  //   borderWidth: 4,
+  //   borderRadius: 7,
+  //   marginLeft: 10,
+  //   marginRight: 10,
+  //   borderColor: "#82E0AA",
+  //   height: 550,
+  //   width: "96.5%",
+  //   height: 200,
+  // },
+
+  //   viewDivProductDetailDesription: {
+
+  //     flex: 0.4,
+  //     backgroundColor: "#DAF7A6",
+  //     borderWidth: 5,
+  //     borderRadius: 10,
+  //     margin: 10,
+  //     height: 500,
+  //     width: "75%",
+  // },
 
   productDetailsContainer: {
     flex: 1,
@@ -128,12 +156,22 @@ export default StyleSheet.create({
     // alignItems: 'center',
   },
 
-
   // cart style
   cartIcon: {
     fontSize: 30,
-    color: "white"
+    color: "white",
+  },
 
-  }
-  
+  cartTitleText: {
+    color: "black",
+    fontSize: 25,
+    fontWeight: "bold",
+    margin: 15,
+    textAlign: "center",
+  },
+
+  cartView: {
+    margin: 10,
+    height: 120,
+  },
 });

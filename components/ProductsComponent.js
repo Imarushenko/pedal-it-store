@@ -6,10 +6,10 @@ import styles from "../assets/Styles";
 const ProductComponent = (props) => {
   return (
     <TouchableOpacity
-      style={styles.productGridItem}
+      style={styles.gridItem}
       onPress={props.onSelectProduct}
     >
-      <View style={styles.container}>
+      <View style={styles.containerOfProducts}>
         <ImageBackground
           source={{ uri: props.image }}
           resizeMode="contain"

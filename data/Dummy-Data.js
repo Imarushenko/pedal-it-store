@@ -50,7 +50,8 @@ export const PRODUCTS = [
     "The Ransom. This Enduro Mountain Bike features 170mm of trail munchin', climb crushing, stage winning all day pinning mountain biking excellence.",
     "M",
     2599.0,
-    300.0
+    300.0,
+    4.5
   ),
   new Product(
     "proc2",
@@ -60,7 +61,8 @@ export const PRODUCTS = [
     "The Contessa Ransom. This enduro mountain bike features 170mm of trail munchin', climb crushing, stage winning all day pinning mountain biking excellence.",
     "L",
     4499.0,
-    200.0
+    200.0,
+    3.2
   ),
   new Product(
     "proc3",
@@ -70,7 +72,8 @@ export const PRODUCTS = [
     "The SCOTT Ransom 600 is the fast and capable mountain bike for kids that dreams are made of. mountain bike features 170mm of trail munchin', climb crushing.",
     "XL",
     6999.0,
-    300.0
+    300.0,
+    5
   ),
   new Product(
     "proc4",
@@ -80,7 +83,8 @@ export const PRODUCTS = [
     "The Ransom. This Enduro Mountain Bike features 170mm of trail munchin', climb crushing, stage winning all day pinning mountain biking excellence.",
     "XL",
     6999.0,
-    300.0
+    300.0,
+    2.9
   ),
 
   // downhill  bikes products
@@ -92,7 +96,8 @@ export const PRODUCTS = [
     "The Gambler Tuned is a downhill mountain bike that was designed for one thing and one thing only, pure, unadulterated speed.",
     "XL",
     4999.0,
-    100.0
+    100.0,
+    5
   ),
 
   new Product(
@@ -103,7 +108,8 @@ export const PRODUCTS = [
     "The Gambler is a downhill mountain bike that was designed for one thing and one thing only, pure, unadulterated speed. We made it to get you to take lines you'd never thought imaginable, to make you want to go to the bathroom before your race run - twice.",
     "L",
     5999.0,
-    400.0
+    400.0,
+    4
   ),
 
   new Product(
@@ -114,7 +120,8 @@ export const PRODUCTS = [
     "The Gambler is a downhill mountain bike that was designed for one thing and one thing only, pure, unadulterated speed. We made it to get you to take lines you'd never thought imaginable, to make you want to go to the bathroom before your race run - twice.",
     "S",
     3999.0,
-    500.0
+    500.0,
+    4.7
   ),
 
   new Product(
@@ -125,7 +132,8 @@ export const PRODUCTS = [
     "The SCOTT Voltage YZ 0.1 is our Pro riders replica bike built around a high-end Alloy dirtjump mountain bike frame. Equipped with ultashort adjustable chain stays, a tapered headtube and high-end components, this bike is perfect for hitting the pumptrack, the dirtjumps, or jibbin' through the streets.",
     "M",
     7499.0,
-    100.0
+    100.0,
+    5
   ),
 
   // trail / xc bikes products
@@ -137,7 +145,8 @@ export const PRODUCTS = [
     "When you think of the perfect mountain bike, what comes to mind? For us, it's the all new Spark 900 Ultimate EVO AXS. Why, you ask? Well, beyond the fact that it is fast, lightweight and ultra capable on all sorts of terrain, it's just damned good lookin'.",
     "L",
     4799.0,
-    150.0
+    150.0,
+    3.5
   ),
 
   new Product(
@@ -148,7 +157,8 @@ export const PRODUCTS = [
     "When you think of the perfect mountain bike, what comes to mind? For us, it's the all new Spark 900 Tuned AXS. Why, you ask? Well, beyond the fact that it is fast, lightweight and ultra capable on all sorts of terrain, it's just damned good lookin'.",
     "S",
     5599.0,
-    120.0
+    120.0,
+    4
   ),
 
   new Product(
@@ -159,7 +169,8 @@ export const PRODUCTS = [
     "When you think of the perfect mountain bike, what comes to mind? For us, it's the all new Spark 930. Why, you ask? Well, beyond the fact that it is fast, lightweight and ultra capable on all sorts of terrain, it's just damned good lookin'.",
     "XL",
     9599.0,
-    220.0
+    220.0,
+    5
   ),
 
   new Product(
@@ -170,7 +181,32 @@ export const PRODUCTS = [
     "When you think of the perfect mountain bike, what comes to mind? For us, it's the all new Spark 960. Why, you ask? Well, beyond the fact that it is fast, lightweight and ultra capable on all sorts of terrain, it's just damned good lookin'.",
     "L",
     8599.0,
-    315.0
+    315.0,
+    4
+  ),
+
+  new Product(
+    "proc32",
+    ["cat3"],
+    "https://pictures.ssg-service.com/286/286604_1795669_png_overview_4.png",
+    "SCOTT SPARK 900 ULTIMATE EVO AXS BIKE",
+    "When you think of the perfect mountain bike, what comes to mind? For us, it's the all new Spark 900 Ultimate EVO AXS. Why, you ask? Well, beyond the fact that it is fast, lightweight and ultra capable on all sorts of terrain, it's just damned good lookin'.",
+    "L",
+    4799.0,
+    150.0,
+    3.5
+  ),
+
+  new Product(
+    "proc31",
+    ["cat3"],
+    "https://pictures.ssg-service.com/286/286281_1795785_png_overview_6.png",
+    "SCOTT VOLTAGE YZ 0.1 BIKE",
+    "When you think of the perfect mountain bike, what comes to mind? For us, it's the all new Spark 900 Tuned AXS. Why, you ask? Well, beyond the fact that it is fast, lightweight and ultra capable on all sorts of terrain, it's just damned good lookin'.",
+    "S",
+    5599.0,
+    120.0,
+    4
   ),
 
   // Road Bikes products
@@ -182,7 +218,8 @@ export const PRODUCTS = [
     "Lightweight? Obviously. Fast? You betcha. Now with more integration than ever before, the Addict RC Ultimate will give you all the competitive advantage you need, should that be for taking your town’s KOMs one by one, sprinting to that mountain top finish or edging out the rest of the field in your local criterium.",
     "M",
     3699.0,
-    105.0
+    105.0,
+    2.5
   ),
 
   new Product(
@@ -193,7 +230,8 @@ export const PRODUCTS = [
     "Lightweight? Obviously. Fast? You betcha. Now with more integration than ever before, the Addict RC Pro will give you all the competitive advantage you need, should that be for taking your town’s KOMs one by one, sprinting to that mountain top finish or edging out the rest of the field in your local criterium.",
     "L",
     4099.0,
-    99.0
+    99.0,
+    5
   ),
 
   new Product(
@@ -204,7 +242,8 @@ export const PRODUCTS = [
     "Light, fast, and ready to turn heads. The Addict RC 10 provides you with all of the competitive advantage you've ever dreamed of. Fully integrated cables and race-ready spec combine to give you the tool to sprint to a mountain top finish or win your local criterium.",
     "S",
     2099.0,
-    199.0
+    199.0,
+    4
   ),
 
   new Product(
@@ -215,7 +254,32 @@ export const PRODUCTS = [
     "Light, fast, and ready to turn heads. The Addict RC 15 provides you with all of the competitive advantage you've ever dreamed of. Fully integrated cables and race-ready spec combine to give you the tool to sprint to a mountain top finish or win your local criterium.",
     "XL",
     1199.0,
-    299.0
+    299.0,
+    3.6
+  ),
+
+  new Product(
+    "proc30",
+    ["cat4"],
+    "https://pictures.ssg-service.com/286/286414_1795890_png_overview_6.png",
+    "SCOTT ADDICT RC ULTIMATE BIKE",
+    "Lightweight? Obviously. Fast? You betcha. Now with more integration than ever before, the Addict RC Ultimate will give you all the competitive advantage you need, should that be for taking your town’s KOMs one by one, sprinting to that mountain top finish or edging out the rest of the field in your local criterium.",
+    "M",
+    3699.0,
+    105.0,
+    2.5
+  ),
+
+  new Product(
+    "proc29",
+    ["cat4"],
+    "https://pictures.ssg-service.com/286/286415_1795891_png_overview_6.png",
+    "SCOTT ADDICT RC PRO BIKE",
+    "Lightweight? Obviously. Fast? You betcha. Now with more integration than ever before, the Addict RC Pro will give you all the competitive advantage you need, should that be for taking your town’s KOMs one by one, sprinting to that mountain top finish or edging out the rest of the field in your local criterium.",
+    "L",
+    4099.0,
+    99.0,
+    5
   ),
 
   //Cross-Country products
@@ -227,7 +291,8 @@ export const PRODUCTS = [
     "The SCOTT SUB Cross 20 emphasizes comfort and convenience for touring and transportation. Equipped with a lockout fork and Syncros components, the SUB Cross is set up perfectly for your excursions.",
     "M",
     3999.0,
-    99.0
+    99.0,
+    4.9
   ),
 
   new Product(
@@ -238,7 +303,8 @@ export const PRODUCTS = [
     "The SCOTT SUB Cross 20 emphasizes comfort and convenience for touring and transportation. Equipped with a lockout fork and Syncros components, the SUB Cross is set up perfectly for your excursions.",
     "M",
     4999.0,
-    100.0
+    100.0,
+    3.5
   ),
 
   new Product(
@@ -249,7 +315,8 @@ export const PRODUCTS = [
     "The SCOTT SUB Cross 10 emphasizes comfort and convenience for touring and transportation. Equipped with a remote lockout fork and Syncros components, the SUB Cross is set up perfectly for your excursions.",
     "XL",
     7999.0,
-    0.0
+    0.0,
+    5
   ),
 
   new Product(
@@ -260,7 +327,32 @@ export const PRODUCTS = [
     "The SCOTT SUB Cross 10 emphasizes comfort and convenience for touring and transportation. Equipped with a remote lockout fork and Syncros components, the SUB Cross is set up perfectly for your excursions.",
     "S",
     2000.0,
-    59.0
+    59.0,
+    5
+  ),
+
+  new Product(
+    "proc27",
+    ["cat5"],
+    "https://pictures.ssg-service.com/280/280825_1699423_png_overview_10.png",
+    "SCOTT SUB CROSS 20 MEN BIKE",
+    "The SCOTT SUB Cross 20 emphasizes comfort and convenience for touring and transportation. Equipped with a lockout fork and Syncros components, the SUB Cross is set up perfectly for your excursions.",
+    "M",
+    3999.0,
+    99.0,
+    4.9
+  ),
+
+  new Product(
+    "proc28",
+    ["cat5"],
+    "https://pictures.ssg-service.com/280/280826_1699424_png_overview_10.png",
+    "SCOTT SUB CROSS 20 LADY BIKE",
+    "The SCOTT SUB Cross 20 emphasizes comfort and convenience for touring and transportation. Equipped with a lockout fork and Syncros components, the SUB Cross is set up perfectly for your excursions.",
+    "M",
+    4999.0,
+    100.0,
+    3.5
   ),
 
   // gear prducts
@@ -272,7 +364,8 @@ export const PRODUCTS = [
     "Our Supersonic Collection of products was developed with one thing in mind - pure race speed. The SCOTT Centric Plus was designed and developed for our world-class road and mountain bike racers.",
     "S",
     199.0,
-    29.0
+    29.0,
+    4
   ),
 
   new Product(
@@ -283,7 +376,8 @@ export const PRODUCTS = [
     "In-Mold TechnologyPolycarbonate Micro Shell, Everything we've learned from our high-end racing helmets has trickled down to the SCOTT Arx Plus - a versatile all-rounder. The SCOTT Nero Plus is our flagship full-face helmet that seamlessly.",
     "L",
     299.0,
-    39.0
+    39.0,
+    5
   ),
 
   new Product(
@@ -294,7 +388,8 @@ export const PRODUCTS = [
     "Mesh/microfiber upper. Our Supersonic Collection of products was developed with one thing in mind - pure race speed. that offers maximum stiffness and minimal weight.",
     "M",
     99.0,
-    59.0
+    59.0,
+    3.9
   ),
 
   new Product(
@@ -305,6 +400,31 @@ export const PRODUCTS = [
     "Massive field of vision. The SCOTT Prospect Light Sensitive Goggle is an absolute highlight among off-road and motocross goggles.",
     "XL",
     499.0,
-    0.0
+    0.0,
+    4.5
+  ),
+
+  new Product(
+    "proc25",
+    ["cat6"],
+    "https://s7d2.scene7.com/is/image/FoxRacing/28003002_2?$dw_pm1$&wid=400&hei=400",
+    "SCOTT ROAD RC SHOE",
+    "Mesh/microfiber upper. Our Supersonic Collection of products was developed with one thing in mind - pure race speed. that offers maximum stiffness and minimal weight.",
+    "M",
+    99.0,
+    59.0,
+    3.9
+  ),
+
+  new Product(
+    "proc26",
+    ["cat6"],
+    "https://s7d2.scene7.com/is/image/FoxRacing/28156016_2?$dw_pm1$&wid=400&hei=400",
+    "SCOTT PROSPECT GOGGLE",
+    "Massive field of vision. The SCOTT Prospect Light Sensitive Goggle is an absolute highlight among off-road and motocross goggles.",
+    "XL",
+    499.0,
+    0.0,
+    4.5
   ),
 ];
