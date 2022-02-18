@@ -20,7 +20,7 @@ export default function StoreNavigator() {
         ></Stack.Screen>
 
         <Stack.Screen
-          name="Products - Total Items: 4"
+          name="Products - Total Items: 6"
           component={CategoriesScreen}
         ></Stack.Screen>
 
@@ -37,7 +37,6 @@ export default function StoreNavigator() {
         ></Stack.Screen>
 
         <Stack.Screen name="Summary" component={SummaryScreen}></Stack.Screen>
-        
       </Stack.Navigator>
     </NavigationContainer>
   );

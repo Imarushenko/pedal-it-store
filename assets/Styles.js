@@ -17,7 +17,7 @@ export default StyleSheet.create({
 
   container: {
     flex: 1,
-    borderRadius: 0,
+    borderRadius: 10,
     backgroundColor: "white",
     shadowColor: "#CD6155",
     shadowOpacity: 3,
@@ -30,9 +30,11 @@ export default StyleSheet.create({
 
   containerOfProducts: {
     flex: 1,
-    borderRadius: 0,
+    borderRadius: 8,
+    borderColor: "black",
+    borderWidth: 5,
     backgroundColor: "white",
-    shadowColor: "#27AE60",
+    shadowColor: "#8E44AD",
     shadowOpacity: 3,
     shadowOffset: { width: 7, height: 6 },
     shadowRadius: 10,
@@ -119,6 +121,10 @@ export default StyleSheet.create({
     flex: 1,
     borderRadius: 0,
     backgroundColor: "#900C3F",
+    borderWidth: 4.5,
+    borderColor: "black",
+    borderRadius: 8,
+    width: "100%"
   },
 
   // cart style
@@ -178,16 +184,15 @@ export default StyleSheet.create({
   },
 
   generalView: {
-    flex: 1,
     backgroundColor: "#A9DFBF",
-    // alignItems: "center",
-    // justifyContent: "center",
-    // elevation: 15,
-    height: "100%",
     width: "100%",
     borderRadius: 15,
     borderWidth: 3,
     borderColor: "black",
   },
+
+  header: {
+    backgroundColor: "yellow"
+  }
 
 });

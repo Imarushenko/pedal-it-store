@@ -15,10 +15,10 @@ export default function SummaryScreen({navigation}) {
     const summary = "Your order has been placed!"
 
     return(
-        <View style={styles.generalView}>
+        <ScrollView style={styles.generalView}>
             <Text style={styles.productTitle}>
                 {summary}
             </Text>
-        </View>
+        </ScrollView>
     )
 }

@@ -10,7 +10,7 @@ export default function ProductsScreen({ route, navigation }) {
   let totalPtrice = current_product.price + current_product.shipping;
 
   return (
-    <View style={[styles.productDetailsContainer, { width: "100%" }]}>
+    <View style={styles.productDetailsContainer}>
       <ScrollView>
         <View style={styles.container}>
           <Image

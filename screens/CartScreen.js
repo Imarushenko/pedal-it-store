@@ -29,7 +29,7 @@ export default function CartScreen({ navigation }) {
   const coupon_c = { name: "65fdGBVDBFt4r645645tbgfdRFY$%", discount: 0.05 };
 
   return (
-    <ScrollView style={{ width: "100%", backgroundColor: "#A6B2AB" }}>
+    <ScrollView style={styles.generalView}>
       <View>
         <Text style={[styles.cartTitleText, { fontSize: 60, color: "black" }]}>
           CART
@@ -93,7 +93,10 @@ export default function CartScreen({ navigation }) {
       </View>
 
       <TouchableOpacity
-        style={[styles.touchableOpacityStyle, { marginLeft: "35%" }]}
+        style={[
+          styles.touchableOpacityStyle,
+          { marginLeft: "35%", backgroundColor: "#F7DC6F" },
+        ]}
         onPress={() => navigation.navigate("Payment Summary")}
       >
         <Text style={styles.cartTitleText}>Proceed to payment</Text>

@@ -87,6 +87,29 @@ export const PRODUCTS = [
     2.9
   ),
 
+  new Product(
+    "proc33",
+    ["cat1"],
+    "https://pictures.ssg-service.com/286/286305_1795827_png_overview_4.png",
+    "SCOTT RANSOM 900 TUNED AXS BIKE",
+    "The Ransom. This Enduro Mountain Bike features 170mm of trail munchin', climb crushing, stage winning all day pinning mountain biking excellence.",
+    "M",
+    2599.0,
+    300.0,
+    4.5
+  ),
+  new Product(
+    "proc34",
+    ["cat1"],
+    "https://pictures.ssg-service.com/286/286370_1795870_png_overview_4.png",
+    "SCOTT CONTESSA RANSOM 910 BIKE",
+    "The Contessa Ransom. This enduro mountain bike features 170mm of trail munchin', climb crushing, stage winning all day pinning mountain biking excellence.",
+    "L",
+    4499.0,
+    200.0,
+    3.2
+  ),
+
   // downhill  bikes products
   new Product(
     "proc5",
@@ -134,6 +157,30 @@ export const PRODUCTS = [
     7499.0,
     100.0,
     5
+  ),
+
+  new Product(
+    "proc36",
+    ["cat2"],
+    "https://pictures.ssg-service.com/286/286309_1795831_png_overview_4.png",
+    "SCOTT GAMBLER 900 TUNED BIKE",
+    "The Gambler Tuned is a downhill mountain bike that was designed for one thing and one thing only, pure, unadulterated speed.",
+    "XL",
+    4999.0,
+    100.0,
+    5
+  ),
+
+  new Product(
+    "proc35",
+    ["cat2"],
+    "https://pictures.ssg-service.com/286/286310_1795832_png_overview_4.png",
+    "SCOTT GAMBLER 910 BIKE",
+    "The Gambler is a downhill mountain bike that was designed for one thing and one thing only, pure, unadulterated speed. We made it to get you to take lines you'd never thought imaginable, to make you want to go to the bathroom before your race run - twice.",
+    "L",
+    5999.0,
+    400.0,
+    4
   ),
 
   // trail / xc bikes products

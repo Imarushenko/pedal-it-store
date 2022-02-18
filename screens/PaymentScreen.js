@@ -16,7 +16,7 @@ import UserDetails from "../models/UserDetails";
 export default function PaymentScreen({ navigation }) {
   const [userFirstName, setUserFirstName] = useState("");
   const [userLasttName, setUserLasttName] = useState("");
-  const [emailAddress, setEmailAddress] = useState(true);
+  const [emailAddress, setEmailAddress] = useState("");
   const [cellNumber, setCellNumber] = useState("");
   const [country, setCountry] = useState("");
   const [city, setCity] = useState("");
@@ -27,16 +27,14 @@ export default function PaymentScreen({ navigation }) {
   const [creditCardExDate, setCreditCardExDate] = useState("");
   const [cvv, setCvv] = useState("");
 
-  
-
   if (userFirstName instanceof String && userFirstName > 0) {
     alert("User First Name Incoreect");
     setUserFirstName(true);
   }
 
-  if (userLasttName instanceof String && userLasttName > 0){
-     alert("User Last Name Incoreect");
-     setUserLasttName(true);
+  if (userLasttName instanceof String && userLasttName > 0) {
+    alert("User Last Name Incoreect");
+    setUserLasttName(true);
   }
 
   if (emailAddress instanceof String) {
@@ -44,51 +42,58 @@ export default function PaymentScreen({ navigation }) {
     setEmailAddress(true);
   }
 
-  if(cellNumber instanceof Number && cellNumber > 0 && cellNumber <= 10){
+  if (cellNumber instanceof Number && cellNumber > 0 && cellNumber <= 10) {
     alert("Cell Number Is Incoreect");
     setCellNumber(true);
   }
 
-  if(country instanceof String){
+  if (country instanceof String) {
     alert("Country Incoreect");
     setCountry(true);
   }
 
-  if(city instanceof String){
+  if (city instanceof String) {
     alert("City Incoreect");
     setCity(true);
   }
-  
-  if(address instanceof String){
+
+  if (address instanceof String) {
     alert("Address Incoreect");
     setAddress(true);
   }
 
-  if(cardHolderName instanceof String && cardHolderName > 0 && cardHolderName < 25){
+  if (
+    cardHolderName instanceof String &&
+    cardHolderName > 0 &&
+    cardHolderName < 25
+  ) {
     alert("Card Holder Name Incoreect");
     cardHolderName(true);
   }
 
-  if(idNumber instanceof Number && idNumber > 0 && idNumber <= 9){
+  if (idNumber instanceof Number && idNumber > 0 && idNumber <= 9) {
     alert("ID Number Incoreect");
     setIdNumber(true);
   }
 
-  if(creditCardNumber instanceof Number && creditCardNumber > 0 && creditCardNumber <= 16){
+  if (
+    creditCardNumber instanceof Number &&
+    creditCardNumber > 0 &&
+    creditCardNumber <= 16
+  ) {
     alert("Credit Card Number Incoreect");
     setCreditCardNumber(true);
   }
 
-   if(creditCardExDate instanceof Date){
+  if (creditCardExDate instanceof Date) {
     alert("Credit Card ExDate Incoreect");
     setCreditCardExDate(true);
   }
 
-  if(cvv instanceof Number && cvv > 0 && cvv <= 3){
+  if (cvv instanceof Number && cvv > 0 && cvv <= 3) {
     alert("Cvv Incoreect");
     setCvv(true);
   }
-  
 
   return (
     <View style={styles.generalView}>
