@@ -1,4 +1,12 @@
-import { TextInput, ScrollView, View, Text, Button } from "react-native";
+import {
+  TextInput,
+  ScrollView,
+  View,
+  Text,
+  Button,
+  Touchable,
+  TouchableOpacity,
+} from "react-native";
 import React, { createRef } from "react";
 import { FormItem, submitForm, Form } from "react-native-form-component";
 import { useState } from "react";
@@ -19,18 +27,19 @@ export default function PaymentScreen({ navigation }) {
   const [creditCardExDate, setCreditCardExDate] = useState("");
   const [cvv, setCvv] = useState("");
 
-  //   if (emailAddress == "") {
-  //     setEmailAddress(false);
-  //   } else {
-  //     setEmailAddress(true);
-  //   }
+  if (emailAddress instanceof String) {
+    alert("Email incorrect");
+    setEmailAddress(true);
+  }
 
 
-  //////////////////////
+
+  
+
   return (
     <View style={styles.generalView}>
       <Text style={styles.cartTitleText}>Details and Paymnet</Text>
-      
+
       <FormItem
         style={{ margin: 15 }}
         placeholder="Enter Your First Name..."
@@ -49,7 +58,7 @@ export default function PaymentScreen({ navigation }) {
         asterik
       ></FormItem>
 
-        <FormItem
+      <FormItem
         style={{ margin: 15 }}
         placeholder="Enter Your Email..."
         isRequired
@@ -58,7 +67,7 @@ export default function PaymentScreen({ navigation }) {
         asterik
       ></FormItem>
 
-        <FormItem
+      <FormItem
         style={{ margin: 15 }}
         placeholder="Enter Your Phone Nunber..."
         isRequired
@@ -67,78 +76,92 @@ export default function PaymentScreen({ navigation }) {
         asterik
       ></FormItem>
 
-        <FormItem
+      <FormItem
         style={{ margin: 15 }}
         placeholder="Enter Your Country... "
         isRequired
         value={UserDetails.count}
         onChangeText={(text) => setCountry(text)}
         asterik
-       ></FormItem>
+      ></FormItem>
 
-        <FormItem
+      <FormItem
         style={{ margin: 15 }}
         placeholder="Enter Your City..."
         isRequired
         value={UserDetails.city}
         onChangeText={(text) => setCity(text)}
         asterik
-        ></FormItem>
+      ></FormItem>
 
-        <FormItem
+      <FormItem
         style={{ margin: 15 }}
         placeholder="Enter Your Address..."
         isRequired
         value={UserDetails.address}
         onChangeText={(text) => setAddress(text)}
         asterik
-        ></FormItem>
+      ></FormItem>
 
-        <FormItem
+      <FormItem
         style={{ margin: 15 }}
         placeholder="Enter Your Card Holder Name..."
         isRequired
         value={UserDetails.card}
         onChangeText={(text) => setCardHolderName(text)}
         asterik
-        ></FormItem>
+      ></FormItem>
 
-        <FormItem
+      <FormItem
         style={{ margin: 15 }}
         placeholder="Enter Your ID Number..."
         isRequired
         value={UserDetails.id}
-        onChangeText={(idNumber) =>  setIdNumber(idNumber)}
+        onChangeText={(idNumber) => setIdNumber(idNumber)}
         asterik
-        ></FormItem>
+      ></FormItem>
 
-        <FormItem
+      <FormItem
         style={{ margin: 15 }}
         placeholder="Enter Your Credit Card..."
         isRequired
         value={UserDetails.creditCard}
         onChangeText={(text) => setCreditCardNumber(text)}
         asterik
-         ></FormItem>
+      ></FormItem>
 
-        <FormItem
+      <FormItem
         style={{ margin: 15 }}
         placeholder="Enter Your Ex Date Card..."
         isRequired
         value={UserDetails.exCardDate}
         onChangeText={(Number) => setCreditCardExDate(Number)}
         asterik
-        ></FormItem>
+      ></FormItem>
 
-        <FormItem     
+      <FormItem
         style={{ margin: 15 }}
         placeholder="Enter Your Cvv Number..."
         isRequired
         value={UserDetails.cvv}
         onChangeText={(Number) => setCvv(Number)}
         asterik
-        ></FormItem>
+      ></FormItem>
 
+      <TouchableOpacity
+        style={[
+          styles.touchableOpacityStyle,
+          {
+            marginLeft: "35%",
+            width: 160,
+            height: 65,
+            backgroundColor: "#F7DC6F",
+          },
+        ]}
+        onPress={() => navigation.navigate("Summary")}
+      >
+        <Text style={[styles.cartTitleText, { padding: 10 }]}>Submit</Text>
+      </TouchableOpacity>
     </View>
   );
 }
