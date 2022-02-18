@@ -33,7 +33,115 @@ export default function PaymentScreen({ navigation }) {
       
       <FormItem
         style={{ margin: 15 }}
-        placeholder="Email"
+        placeholder="Enter Your Email"
+        isRequired
+        value={UserDetails.email}
+        onChangeText={(text) => setEmailAddress(text)}
+        asterik
+      ></FormItem>
+
+      <FormItem
+        style={{ margin: 15 }}
+        placeholder="Enter Your Email"
+        isRequired
+        value={UserDetails.email}
+        onChangeText={(text) => setEmailAddress(text)}
+        asterik
+      ></FormItem>
+
+<FormItem
+        style={{ margin: 15 }}
+        placeholder="Enter Your Email"
+        isRequired
+        value={UserDetails.email}
+        onChangeText={(text) => setEmailAddress(text)}
+        asterik
+      ></FormItem>
+
+<FormItem
+        style={{ margin: 15 }}
+        placeholder="Enter Your Email"
+        isRequired
+        value={UserDetails.email}
+        onChangeText={(text) => setEmailAddress(text)}
+        asterik
+      ></FormItem>
+
+<FormItem
+        style={{ margin: 15 }}
+        placeholder="Enter Your Email"
+        isRequired
+        value={UserDetails.email}
+        onChangeText={(text) => setEmailAddress(text)}
+        asterik
+      ></FormItem>
+
+<FormItem
+        style={{ margin: 15 }}
+        placeholder="Enter Your Email"
+        isRequired
+        value={UserDetails.email}
+        onChangeText={(text) => setEmailAddress(text)}
+        asterik
+      ></FormItem>
+
+<FormItem
+        style={{ margin: 15 }}
+        placeholder="Enter Your Email"
+        isRequired
+        value={UserDetails.email}
+        onChangeText={(text) => setEmailAddress(text)}
+        asterik
+      ></FormItem>
+
+<FormItem
+        style={{ margin: 15 }}
+        placeholder="Enter Your Email"
+        isRequired
+        value={UserDetails.email}
+        onChangeText={(text) => setEmailAddress(text)}
+        asterik
+      ></FormItem>
+
+<FormItem
+        style={{ margin: 15 }}
+        placeholder="Enter Your Email"
+        isRequired
+        value={UserDetails.email}
+        onChangeText={(text) => setEmailAddress(text)}
+        asterik
+      ></FormItem>
+
+<FormItem
+        style={{ margin: 15 }}
+        placeholder="Enter Your Email"
+        isRequired
+        value={UserDetails.email}
+        onChangeText={(text) => setEmailAddress(text)}
+        asterik
+      ></FormItem>
+
+<FormItem
+        style={{ margin: 15 }}
+        placeholder="Enter Your Email"
+        isRequired
+        value={UserDetails.email}
+        onChangeText={(text) => setEmailAddress(text)}
+        asterik
+      ></FormItem>
+
+<FormItem
+        style={{ margin: 15 }}
+        placeholder="Enter Your Email"
+        isRequired
+        value={UserDetails.email}
+        onChangeText={(text) => setEmailAddress(text)}
+        asterik
+      ></FormItem>
+
+<FormItem
+        style={{ margin: 15 }}
+        placeholder="Enter Your Email"
         isRequired
         value={UserDetails.email}
         onChangeText={(text) => setEmailAddress(text)}
