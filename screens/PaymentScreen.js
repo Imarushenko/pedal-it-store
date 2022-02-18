@@ -33,7 +33,7 @@ export default function PaymentScreen({ navigation }) {
       
       <FormItem
         style={{ margin: 15 }}
-        placeholder="Enter Your First Name"
+        placeholder="Enter Your First Name..."
         isRequired
         value={UserDetails.fName}
         onChangeText={(text) => setUserFirstName(text)}
@@ -42,7 +42,7 @@ export default function PaymentScreen({ navigation }) {
 
       <FormItem
         style={{ margin: 15 }}
-        placeholder="Enter Your Last Name"
+        placeholder="Enter Your Last Name..."
         isRequired
         value={UserDetails.lName}
         onChangeText={(text) => setUserLasttName(text)}
@@ -51,7 +51,7 @@ export default function PaymentScreen({ navigation }) {
 
         <FormItem
         style={{ margin: 15 }}
-        placeholder="Enter Your Email"
+        placeholder="Enter Your Email..."
         isRequired
         value={UserDetails.email}
         onChangeText={(text) => setEmailAddress(text)}
@@ -60,7 +60,7 @@ export default function PaymentScreen({ navigation }) {
 
         <FormItem
         style={{ margin: 15 }}
-        placeholder="Enter Your Phone Nunber"
+        placeholder="Enter Your Phone Nunber..."
         isRequired
         value={UserDetails.cellNumber}
         onChangeText={(cellNumber) => setCellNumber(cellNumber)}
@@ -69,7 +69,7 @@ export default function PaymentScreen({ navigation }) {
 
         <FormItem
         style={{ margin: 15 }}
-        placeholder="Enter Your Country "
+        placeholder="Enter Your Country... "
         isRequired
         value={UserDetails.count}
         onChangeText={(text) => setCountry(text)}
@@ -78,7 +78,7 @@ export default function PaymentScreen({ navigation }) {
 
         <FormItem
         style={{ margin: 15 }}
-        placeholder="Enter Your City"
+        placeholder="Enter Your City..."
         isRequired
         value={UserDetails.city}
         onChangeText={(text) => setCity(text)}
@@ -87,55 +87,55 @@ export default function PaymentScreen({ navigation }) {
 
         <FormItem
         style={{ margin: 15 }}
-        placeholder="Enter Your Email"
+        placeholder="Enter Your Address..."
         isRequired
-        value={UserDetails.email}
-        onChangeText={(text) => setEmailAddress(text)}
+        value={UserDetails.address}
+        onChangeText={(text) => setAddress(text)}
         asterik
         ></FormItem>
 
         <FormItem
         style={{ margin: 15 }}
-        placeholder="Enter Your Email"
+        placeholder="Enter Your Card Holder Name..."
         isRequired
-        value={UserDetails.email}
-        onChangeText={(text) => setEmailAddress(text)}
+        value={UserDetails.card}
+        onChangeText={(text) => setCardHolderName(text)}
         asterik
         ></FormItem>
 
         <FormItem
         style={{ margin: 15 }}
-        placeholder="Enter Your Email"
+        placeholder="Enter Your ID Number..."
         isRequired
-        value={UserDetails.email}
-        onChangeText={(text) => setEmailAddress(text)}
+        value={UserDetails.id}
+        onChangeText={(idNumber) =>  setIdNumber(idNumber)}
         asterik
         ></FormItem>
 
         <FormItem
         style={{ margin: 15 }}
-        placeholder="Enter Your Email"
+        placeholder="Enter Your Credit Card..."
         isRequired
-        value={UserDetails.email}
-        onChangeText={(text) => setEmailAddress(text)}
+        value={UserDetails.creditCard}
+        onChangeText={(text) => setCreditCardNumber(text)}
         asterik
          ></FormItem>
 
         <FormItem
         style={{ margin: 15 }}
-        placeholder="Enter Your Email"
+        placeholder="Enter Your Ex Date Card..."
         isRequired
-        value={UserDetails.email}
-        onChangeText={(text) => setEmailAddress(text)}
+        value={UserDetails.exCardDate}
+        onChangeText={(Number) => setCreditCardExDate(Number)}
         asterik
         ></FormItem>
 
         <FormItem     
         style={{ margin: 15 }}
-        placeholder="Enter Your Email"
+        placeholder="Enter Your Cvv Number..."
         isRequired
-        value={UserDetails.email}
-        onChangeText={(text) => setEmailAddress(text)}
+        value={UserDetails.cvv}
+        onChangeText={(Number) => setCvv(Number)}
         asterik
         ></FormItem>
 
