@@ -124,7 +124,7 @@ export default StyleSheet.create({
     borderWidth: 4.5,
     borderColor: "black",
     borderRadius: 8,
-    width: "100%"
+    width: "100%",
   },
 
   // cart style
@@ -149,22 +149,23 @@ export default StyleSheet.create({
   },
 
   textInput: {
-    width: "95%",
-    height: 50,
+    width: "50%",
+    height: "15%",
     borderWidth: 4,
-    borderColor: "white",
-    margin: 10,
+    borderColor: "black",
+    marginLeft: "25%",
+    marginTop: 50,
     borderRadius: 5,
     alignContent: "center",
   },
 
-  // button: {
-  //   width: '30%',
-  //   height: '10%',
-  //   justifyContent: 'center',
-  //   alignItems: 'center',
-  //   backgroundColor: "black"
-  // },
+  button: {
+    width: '30%',
+    height: '10%',
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: "black"
+  },
 
   // text: {
   //   fontSize: 16,
@@ -174,25 +175,35 @@ export default StyleSheet.create({
   //   color: 'white',
   // },
 
+  headerTitle: {
+    textAlign: "center",
+    paddingTop: 10,
+    fontSize: 40,
+    fontWeight: "bold",
+    color: "#0B5345",
+  },
+
   touchableOpacityStyle: {
     backgroundColor: "#86E3AD",
     width: "30%",
-    height: "10%",
+    height: "7%",
     borderWidth: 2.5,
     borderColor: "#2980B9",
     borderRadius: 13,
   },
 
   generalView: {
-    backgroundColor: "#A9DFBF",
+    backgroundColor: "#AAB7B8",
     width: "100%",
     borderRadius: 15,
     borderWidth: 3,
     borderColor: "black",
   },
 
-  header: {
-    backgroundColor: "yellow"
-  }
-
+  finalTitle: {
+    fontSize: 50,
+    fontWeight: "bold",
+    textAlign: "center",
+    color: "#212F3C",
+  },
 });

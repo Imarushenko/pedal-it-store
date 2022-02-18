@@ -1,0 +1,1 @@
+{"ast":null,"code":"import Navigations from \"./navigations/Navigations\";","map":{"version":3,"sources":["C:/pedal-it-store/App.js"],"names":["Navigations"],"mappings":"AAoBA,OAAOA,WAAP","sourcesContent":["\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\nimport Navigations from \"./navigations/Navigations\";"]},"metadata":{},"sourceType":"module"}

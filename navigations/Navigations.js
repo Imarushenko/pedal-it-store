@@ -1,4 +1,5 @@
 import React from "react";
+import { Platform } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import HomeScreen from "../screens/HomeScreen";
@@ -8,12 +9,25 @@ import CartScreen from "../screens/CartScreen";
 import PaymentScreen from "../screens/PaymentScreen";
 import SummaryScreen from "../screens/SummaryScreen";
 
+const defaultNavOption = {
+  headerStyle: {
+    backgroundColor: Platform.OS === "android" ? "" : "#2E4053",
+  },
+  headerTitleStyle: {
+    fontFamily: "open-sans-bold",
+  },
+  headerBackTitleStyle: {
+    fontFamily: "open-sans",
+  },
+  headerTintColor: Platform.OS === "android" ? "" : "white",
+};
+
 const Stack = createNativeStackNavigator();
 
 export default function StoreNavigator() {
   return (
     <NavigationContainer>
-      <Stack.Navigator>
+      <Stack.Navigator screenOptions={defaultNavOption}>
         <Stack.Screen
           name="Home - Pedal It Store"
           component={HomeScreen}

@@ -1,9 +1,11 @@
 // imports
 import React from "react";
-import { View, FlatList } from "react-native";
+import { FlatList, Text } from "react-native";
 import { PRODUCTS } from "../data/Dummy-Data";
 import ProductComponent from "../components/ProductsComponent";
 import styles from "../assets/Styles";
+import { ScrollView } from "react-native-web";
+import { CATEGORIES } from "../data/Dummy-Data";
 
 export default function CategoriesScreen({ route, navigation }) {
   const category_id = route.params.category_id;
@@ -28,12 +30,14 @@ export default function CategoriesScreen({ route, navigation }) {
   };
 
   return (
-    <FlatList
-    style={styles.generalView}
-      data={displayProductsPerCategory}
-      keyExtractor={(item) => item.id}
-      renderItem={renderProductItem}
-      numColumns={2}
-    ></FlatList>
+    <ScrollView style={styles.generalView}>
+      <Text style={styles.headerTitle}>PRODUCTS</Text>
+      <FlatList
+        data={displayProductsPerCategory}
+        keyExtractor={(item) => item.id}
+        renderItem={renderProductItem}
+        numColumns={2}
+      ></FlatList>
+    </ScrollView>
   );
 }

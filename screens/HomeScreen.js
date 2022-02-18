@@ -2,8 +2,9 @@
 import React from "react";
 import { CATEGORIES } from "../data/Dummy-Data";
 import CategoryComponent from "../components/CategoriesComponent";
-import { FlatList } from "react-native";
+import { FlatList, Text } from "react-native";
 import styles from "../assets/Styles";
+import { ScrollView } from "react-native-web";
 
 const HomeScreen = ({ navigation }) => {
   const renderGridItem = ({ item }) => {
@@ -22,13 +23,15 @@ const HomeScreen = ({ navigation }) => {
   };
 
   return (
-    <FlatList
-      style={styles.generalView}
-      keyExtractor={(item, index) => item.id}
-      data={CATEGORIES}
-      renderItem={renderGridItem}
-      numColumns={2}
-    ></FlatList>
+    <ScrollView style={styles.generalView}>
+      <Text style={styles.headerTitle}>CATEGORIES</Text>
+      <FlatList
+        keyExtractor={(item, index) => item.id}
+        data={CATEGORIES}
+        renderItem={renderGridItem}
+        numColumns={2}
+      ></FlatList>
+    </ScrollView>
   );
 };
 
