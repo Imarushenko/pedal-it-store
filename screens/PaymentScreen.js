@@ -25,9 +25,12 @@ export default function PaymentScreen({ navigation }) {
   //     setEmailAddress(true);
   //   }
 
+
+  //////////////////////
   return (
     <View style={styles.generalView}>
       <Text style={styles.cartTitleText}>Details and Paymnet</Text>
+      
       <FormItem
         style={{ margin: 15 }}
         placeholder="Email"
