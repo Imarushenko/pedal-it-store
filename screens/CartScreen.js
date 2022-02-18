@@ -6,6 +6,8 @@ import {
   ScrollView,
   TextInput,
   Button,
+  Pressable,
+  TouchableOpacity,
 } from "react-native";
 
 import { CART } from "../data/Dummy-Data";
@@ -27,11 +29,7 @@ export default function CartScreen({ navigation }) {
   const coupon_c = { name: "65fdGBVDBFt4r645645tbgfdRFY$%", discount: 0.05 };
 
   return (
-    <ScrollView
-      style={
-        ([styles.centerView], { width: "100%", backgroundColor: "#A9DFBF" })
-      }
-    >
+    <ScrollView style={{ width: "100%", backgroundColor: "#A6B2AB" }}>
       <View>
         <Text style={[styles.cartTitleText, { fontSize: 60, color: "black" }]}>
           CART
@@ -78,8 +76,15 @@ export default function CartScreen({ navigation }) {
         </View>
       </ImageBackground> */}
 
-      <Text style={styles.cartTitleText}>Have A Coupon ? Enter The Coupon Code Below</Text>
+      {/* <Text style={styles.cartTitleText}>
+        Have A Coupon ? Enter The Coupon Code Below
+      </Text>
+
       <TextInput style={styles.textInput}></TextInput>
+
+      <Pressable style={styles.button}>
+        <Text style={styles.text}>Coupon</Text>
+      </Pressable> */}
 
       <View style={styles.cartView}>
         <Text style={styles.cartTitleText}>
@@ -87,11 +92,12 @@ export default function CartScreen({ navigation }) {
         </Text>
       </View>
 
-      <Button onPress={() => {
-        navigation.navigate("Payment")
-      }}>
-        
-      </Button>
+      <TouchableOpacity
+        style={[styles.touchableOpacityStyle, { marginLeft: "35%" }]}
+        onPress={() => navigation.navigate("Payment Summary")}
+      >
+        <Text style={styles.cartTitleText}>Proceed to payment</Text>
+      </TouchableOpacity>
     </ScrollView>
   );
 }

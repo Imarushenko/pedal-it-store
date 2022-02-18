@@ -128,7 +128,7 @@ export default StyleSheet.create({
   },
 
   cartTitleText: {
-    color: "blue",
+    color: "black",
     fontSize: 25,
     fontWeight: "bold",
     // margin: 10,
@@ -150,5 +150,32 @@ export default StyleSheet.create({
     margin: 10,
     borderRadius: 5,
     alignContent: "center"
+  },
+
+  // button: {
+  //   width: '30%',
+  //   height: '10%',
+  //   justifyContent: 'center',
+  //   alignItems: 'center',
+  //   backgroundColor: "black"
+  // },
+
+  // text: {
+  //   fontSize: 16,
+  //   lineHeight: 21,
+  //   fontWeight: 'bold',
+  //   letterSpacing: 0.25,
+  //   color: 'white',
+  // },
+
+  touchableOpacityStyle: {
+    backgroundColor: "#86E3AD",
+    width: "30%",
+    height: "10%",
+    borderWidth: 2.5,
+    borderColor: "#2980B9",
+    borderRadius: 13
   }
+  
+
 });
