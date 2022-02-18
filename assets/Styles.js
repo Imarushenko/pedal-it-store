@@ -107,7 +107,7 @@ export default StyleSheet.create({
     borderWidth: 6,
     borderRadius: 7,
     margin: 10,
-    // marginLeft: 2, 
+    // marginLeft: 2,
     padding: 2,
     borderColor: "black",
     height: 350,
@@ -139,7 +139,7 @@ export default StyleSheet.create({
     margin: 10,
     width: "90%",
     height: 320,
-    marginLeft: 50
+    marginLeft: 50,
   },
 
   textInput: {
@@ -149,7 +149,7 @@ export default StyleSheet.create({
     borderColor: "white",
     margin: 10,
     borderRadius: 5,
-    alignContent: "center"
+    alignContent: "center",
   },
 
   // button: {
@@ -174,8 +174,19 @@ export default StyleSheet.create({
     height: "10%",
     borderWidth: 2.5,
     borderColor: "#2980B9",
-    borderRadius: 13
-  }
-  
+    borderRadius: 13,
+  },
 
+  generalView: {
+    flex: 1,
+    backgroundColor: "#A9DFBF",
+    // alignItems: "center",
+    justifyContent: "center",
+    elevation: 15,
+    height: 400,
+    width: "100%",
+    borderRadius: 15,
+    borderWidth: 3,
+    borderColor: "black",
+  },
 });
