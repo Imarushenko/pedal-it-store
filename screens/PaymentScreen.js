@@ -33,23 +33,23 @@ export default function PaymentScreen({ navigation }) {
       
       <FormItem
         style={{ margin: 15 }}
-        placeholder="Enter Your Email"
+        placeholder="Enter Your First Name"
         isRequired
-        value={UserDetails.email}
-        onChangeText={(text) => setEmailAddress(text)}
+        value={UserDetails.fName}
+        onChangeText={(text) => setUserFirstName(text)}
         asterik
       ></FormItem>
 
       <FormItem
         style={{ margin: 15 }}
-        placeholder="Enter Your Email"
+        placeholder="Enter Your Last Name"
         isRequired
-        value={UserDetails.email}
-        onChangeText={(text) => setEmailAddress(text)}
+        value={UserDetails.lName}
+        onChangeText={(text) => setUserLasttName(text)}
         asterik
       ></FormItem>
 
-<FormItem
+        <FormItem
         style={{ margin: 15 }}
         placeholder="Enter Your Email"
         isRequired
@@ -58,95 +58,87 @@ export default function PaymentScreen({ navigation }) {
         asterik
       ></FormItem>
 
-<FormItem
+        <FormItem
         style={{ margin: 15 }}
-        placeholder="Enter Your Email"
+        placeholder="Enter Your Phone Nunber"
         isRequired
-        value={UserDetails.email}
-        onChangeText={(text) => setEmailAddress(text)}
+        value={UserDetails.cellNumber}
+        onChangeText={(cellNumber) => setCellNumber(cellNumber)}
         asterik
       ></FormItem>
 
-<FormItem
+        <FormItem
         style={{ margin: 15 }}
-        placeholder="Enter Your Email"
+        placeholder="Enter Your Country "
         isRequired
-        value={UserDetails.email}
-        onChangeText={(text) => setEmailAddress(text)}
+        value={UserDetails.count}
+        onChangeText={(text) => setCountry(text)}
         asterik
-      ></FormItem>
+       ></FormItem>
 
-<FormItem
+        <FormItem
         style={{ margin: 15 }}
-        placeholder="Enter Your Email"
+        placeholder="Enter Your City"
         isRequired
-        value={UserDetails.email}
-        onChangeText={(text) => setEmailAddress(text)}
+        value={UserDetails.city}
+        onChangeText={(text) => setCity(text)}
         asterik
-      ></FormItem>
+        ></FormItem>
 
-<FormItem
+        <FormItem
         style={{ margin: 15 }}
         placeholder="Enter Your Email"
         isRequired
         value={UserDetails.email}
         onChangeText={(text) => setEmailAddress(text)}
         asterik
-      ></FormItem>
+        ></FormItem>
 
-<FormItem
+        <FormItem
         style={{ margin: 15 }}
         placeholder="Enter Your Email"
         isRequired
         value={UserDetails.email}
         onChangeText={(text) => setEmailAddress(text)}
         asterik
-      ></FormItem>
+        ></FormItem>
 
-<FormItem
+        <FormItem
         style={{ margin: 15 }}
         placeholder="Enter Your Email"
         isRequired
         value={UserDetails.email}
         onChangeText={(text) => setEmailAddress(text)}
         asterik
-      ></FormItem>
+        ></FormItem>
 
-<FormItem
+        <FormItem
         style={{ margin: 15 }}
         placeholder="Enter Your Email"
         isRequired
         value={UserDetails.email}
         onChangeText={(text) => setEmailAddress(text)}
         asterik
-      ></FormItem>
+         ></FormItem>
 
-<FormItem
+        <FormItem
         style={{ margin: 15 }}
         placeholder="Enter Your Email"
         isRequired
         value={UserDetails.email}
         onChangeText={(text) => setEmailAddress(text)}
         asterik
-      ></FormItem>
+        ></FormItem>
 
-<FormItem
+        <FormItem     
         style={{ margin: 15 }}
         placeholder="Enter Your Email"
         isRequired
         value={UserDetails.email}
         onChangeText={(text) => setEmailAddress(text)}
         asterik
-      ></FormItem>
+        ></FormItem>
 
-<FormItem
-        style={{ margin: 15 }}
-        placeholder="Enter Your Email"
-        isRequired
-        value={UserDetails.email}
-        onChangeText={(text) => setEmailAddress(text)}
-        asterik
-      ></FormItem>
     </View>
   );
 }
