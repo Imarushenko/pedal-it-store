@@ -181,7 +181,7 @@ export default StyleSheet.create({
     flex: 1,
     backgroundColor: "#A9DFBF",
     // alignItems: "center",
-    justifyContent: "center",
+    // justifyContent: "center",
     elevation: 15,
     height: 400,
     width: "100%",
@@ -189,4 +189,5 @@ export default StyleSheet.create({
     borderWidth: 3,
     borderColor: "black",
   },
+
 });

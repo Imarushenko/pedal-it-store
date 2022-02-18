@@ -28,16 +28,14 @@ export default function PaymentScreen({ navigation }) {
   return (
     <View style={styles.generalView}>
       <Text style={styles.cartTitleText}>Details and Paymnet</Text>
-      <Form onButtonPress={() => submitForm} style={styles.generalView}>
-        <FormItem
-          style={{ margin: 15 }}
-          placeholder="Email"
-          isRequired
-          value={UserDetails.email}
-          onChangeText={(text) => setEmailAddress(text)}
-          asterik
-        />
-      </Form>
+      <FormItem
+        style={{ margin: 15 }}
+        placeholder="Email"
+        isRequired
+        value={UserDetails.email}
+        onChangeText={(text) => setEmailAddress(text)}
+        asterik
+      ></FormItem>
     </View>
   );
 }
