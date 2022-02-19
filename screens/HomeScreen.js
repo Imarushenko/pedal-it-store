@@ -7,6 +7,7 @@ import styles from "../assets/Styles";
 import { ScrollView } from "react-native-web";
 
 const HomeScreen = ({ navigation }) => {
+  const symbol = "®";
   const renderGridItem = ({ item }) => {
     return (
       <CategoryComponent
@@ -26,11 +27,15 @@ const HomeScreen = ({ navigation }) => {
     <ScrollView style={styles.generalView}>
       <Text style={styles.headerTitle}>CATEGORIES</Text>
       <FlatList
-        keyExtractor={(item, index) => item.id}
+        keyExtractor={(item) => item.id}
         data={CATEGORIES}
         renderItem={renderGridItem}
         numColumns={2}
       ></FlatList>
+      <Text style={styles.footer}>
+        pedal it store
+        <Text style={[styles.footer, { fontSize: 35 }]}>{symbol}</Text>
+      </Text>
     </ScrollView>
   );
 };

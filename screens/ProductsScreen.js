@@ -8,6 +8,7 @@ export default function ProductsScreen({ route, navigation }) {
   const product_id = route.params.product_id;
   const current_product = PRODUCTS.find((item) => item.id === product_id);
   let totalPtrice = current_product.price + current_product.shipping;
+  const symbol = "®";
 
   return (
     <View style={styles.productDetailsContainer}>
@@ -110,12 +111,22 @@ export default function ProductsScreen({ route, navigation }) {
             <Text
               style={[
                 styles.centerView,
-                { color: "white", fontWeight: "bold", fontSize: 25, textAlign: "center" },
+                {
+                  color: "white",
+                  fontWeight: "bold",
+                  fontSize: 25,
+                  textAlign: "center",
+                },
               ]}
             >
               Add To Cart
             </Text>
-            <Icon name="cart" size={55} color="white" style={{textAlign: "center"}}></Icon>
+            <Icon
+              name="cart"
+              size={55}
+              color="white"
+              style={{ textAlign: "center" }}
+            ></Icon>
           </TouchableOpacity>
         </View>
 
@@ -125,22 +136,25 @@ export default function ProductsScreen({ route, navigation }) {
               navigation.navigate("Your Cart");
             }}
           >
-            <Text
-              style={[
-                styles.centerView,
-                {
-                  color: "white",
-                  fontWeight: "bold",
-                  margin: 15,
-                  fontSize: 20,
-                },
-              ]}
-            >
-              Go To The Cart
-            </Text>
+            <View style={[styles.totalPaymentView, { borderColor: "white" }]}>
+              <Icon
+                name="arrow-right"
+                size={40}
+                color="white"
+                style={{ textAlign: "center", fontWeight: "bold" }}
+              >
+                {"Go To The Cart"}
+              </Icon>
+            </View>
           </TouchableOpacity>
         </View>
       </ScrollView>
+      <Text style={[styles.footer, { color: "white" }]}>
+        pedal it store
+        <Text style={[styles.footer, { fontSize: 35, color: "white" }]}>
+          {symbol}
+        </Text>
+      </Text>
     </View>
   );
 }

@@ -17,11 +17,13 @@ export default StyleSheet.create({
 
   container: {
     flex: 1,
-    borderRadius: 10,
+    borderRadius: 8,
+    borderColor: "black",
+    borderWidth: 5,
     backgroundColor: "white",
-    shadowColor: "#CD6155",
+    shadowColor: "#8E44AD",
     shadowOpacity: 3,
-    shadowOffset: { width: 7, height: 6 },
+    shadowOffset: { width: 9, height: 8 },
     shadowRadius: 10,
     elevation: 3,
     justifyContent: "center",
@@ -34,9 +36,9 @@ export default StyleSheet.create({
     borderColor: "black",
     borderWidth: 5,
     backgroundColor: "white",
-    shadowColor: "#8E44AD",
+    shadowColor: "#E74C3C",
     shadowOpacity: 3,
-    shadowOffset: { width: 7, height: 6 },
+    shadowOffset: { width: 9, height: 8 },
     shadowRadius: 10,
     elevation: 3,
     justifyContent: "center",
@@ -142,29 +144,27 @@ export default StyleSheet.create({
   },
 
   cartView: {
-    margin: 10,
+    // margin: 1,
     width: "90%",
-    height: 320,
+    height: "80%",
     marginLeft: 50,
   },
 
   textInput: {
     width: "50%",
-    height: "15%",
     borderWidth: 4,
     borderColor: "black",
     marginLeft: "25%",
-    marginTop: 50,
     borderRadius: 5,
     alignContent: "center",
   },
 
   button: {
-    width: '30%',
-    height: '10%',
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: "black"
+    width: "30%",
+    height: "10%",
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: "black",
   },
 
   // text: {
@@ -186,7 +186,7 @@ export default StyleSheet.create({
   touchableOpacityStyle: {
     backgroundColor: "#86E3AD",
     width: "30%",
-    height: "7%",
+    height: "17%",
     borderWidth: 2.5,
     borderColor: "#2980B9",
     borderRadius: 13,
@@ -206,4 +206,20 @@ export default StyleSheet.create({
     textAlign: "center",
     color: "#212F3C",
   },
+
+  totalPaymentView: {
+    borderWidth: 3,
+    borderRadius: 8,
+    borderColor: "#0B5345",
+    margin: 5,
+    padding: 5,
+  },
+
+  footer: {
+    fontSize: 28,
+    fontWeight: "bold",
+    textAlign: "center",
+    position: "relative",
+    color: "#17202A"
+  }
 });

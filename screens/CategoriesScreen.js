@@ -5,14 +5,13 @@ import { PRODUCTS } from "../data/Dummy-Data";
 import ProductComponent from "../components/ProductsComponent";
 import styles from "../assets/Styles";
 import { ScrollView } from "react-native-web";
-import { CATEGORIES } from "../data/Dummy-Data";
 
 export default function CategoriesScreen({ route, navigation }) {
   const category_id = route.params.category_id;
   const displayProductsPerCategory = PRODUCTS.filter(
     (item) => item.categoryId == category_id
   );
-
+  const symbol = "®";
   const renderProductItem = ({ item }) => {
     return (
       <ProductComponent
@@ -38,6 +37,10 @@ export default function CategoriesScreen({ route, navigation }) {
         renderItem={renderProductItem}
         numColumns={2}
       ></FlatList>
+      <Text style={styles.footer}>
+        pedal it store
+        <Text style={[styles.footer, { fontSize: 35 }]}>{symbol}</Text>
+      </Text>
     </ScrollView>
   );
 }

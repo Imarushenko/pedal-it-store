@@ -1,3 +1,4 @@
+// imports
 import React from "react";
 import {
   Text,
@@ -5,11 +6,9 @@ import {
   ImageBackground,
   ScrollView,
   TextInput,
-  Button,
-  Pressable,
   TouchableOpacity,
 } from "react-native";
-
+import { MaterialCommunityIcons as Icon } from "react-native-vector-icons";
 import { CART } from "../data/Dummy-Data";
 import styles from "../assets/Styles";
 
@@ -23,10 +22,11 @@ export default function CartScreen({ navigation }) {
     sum += price + shipping;
   }
 
-  // coupons
   const coupon_a = { name: "23sxfsf34%#vdf454gvbFDGSDVFds", discount: 0.2 };
   const coupon_b = { name: "DSF$%6hgfhgfH56nf6578ujhngfh", discount: 0.3 };
   const coupon_c = { name: "65fdGBVDBFt4r645645tbgfdRFY$%", discount: 0.05 };
+
+  const symbol = "®";
 
   return (
     <ScrollView style={styles.generalView}>
@@ -39,9 +39,7 @@ export default function CartScreen({ navigation }) {
         source={{ uri: CART[0].productImage }}
         resizeMode="cover"
       >
-        <View>
-          <Text style={styles.cartTitleText}>{CART[0].product_title}</Text>
-        </View>
+        <Text style={styles.cartTitleText}>{CART[0].product_title}</Text>
       </ImageBackground>
 
       <ImageBackground
@@ -49,9 +47,7 @@ export default function CartScreen({ navigation }) {
         source={{ uri: CART[1].productImage }}
         resizeMode="cover"
       >
-        <View>
-          <Text style={styles.cartTitleText}>{CART[1].product_title}</Text>
-        </View>
+        <Text style={styles.cartTitleText}>{CART[1].product_title}</Text>
       </ImageBackground>
 
       <TextInput
@@ -60,42 +56,49 @@ export default function CartScreen({ navigation }) {
         style={[styles.textInput, { fontSize: 30 }]}
       ></TextInput>
 
-      <Pressable
-        style={[
-          styles.touchableOpacityStyle,
-          { marginLeft: "35%", marginTop: 40 },
-        ]}
+      <TouchableOpacity
+        onPress={() => {
+          if (coupon_a) {
+            return sum - coupon_a * sum;
+          }
+          if (coupon_b) {
+            return sum - coupon_b * sum;
+          } else if (coupon_c) {
+            return sum - coupon_c * sum;
+          }
+        }}
       >
         <Text
           style={[
-            styles.text,
+            styles.centerView,
             {
-              textAlign: "center",
-              marginTop: "6%",
-              fontSize: 25,
+              marginTop: 5,
+              color: "black",
               fontWeight: "bold",
+              fontSize: 25,
+              textAlign: "center",
             },
           ]}
         >
-          Coupon
+          Use Coupon
         </Text>
-      </Pressable>
+        <Icon
+          name="ticket-confirmation"
+          size={55}
+          color="black"
+          style={{ textAlign: "center" }}
+        ></Icon>
+      </TouchableOpacity>
 
-      <View style={[styles.cartView]}>
-        <Text
-          style={[
-            styles.cartTitleText,
-            {
-              borderColor: "black",
-              borderWidth: 4,
-              marginRight: 15,
-              borderRadius: 5,
-              borderColor: "#E74C3C",
-            },
-          ]}
+      <View style={styles.totalPaymentView}>
+        <Icon
+          name="credit-card"
+          size={55}
+          color="#0B5345"
+          style={{ textAlign: "center", fontWeight: "bold" }}
         >
           {"Your Total Payment  " + sum + " $"}
-        </Text>
+        </Icon>
       </View>
 
       <TouchableOpacity
@@ -107,6 +110,10 @@ export default function CartScreen({ navigation }) {
       >
         <Text style={styles.cartTitleText}>Proceed to payment</Text>
       </TouchableOpacity>
+      <Text style={styles.footer}>
+        pedal it store
+        <Text style={[styles.footer, { fontSize: 35 }]}>{symbol}</Text>
+      </Text>
     </ScrollView>
   );
 }

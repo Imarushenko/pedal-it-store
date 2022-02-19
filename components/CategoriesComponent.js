@@ -6,7 +6,7 @@ import styles from "../assets/Styles";
 const CategoryComponent = (props) => {
   return (
     <TouchableOpacity style={styles.gridItem} onPress={props.onSelect}>
-      <View style={styles.container}>
+      <View style={styles.containerOfProducts}>
         <ImageBackground
           source={{ uri: props.image }}
           resizeMode="cover"

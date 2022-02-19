@@ -11,6 +11,7 @@ import React, { createRef } from "react";
 import { FormItem, submitForm, Form } from "react-native-form-component";
 import { useState } from "react";
 import styles from "../assets/Styles";
+import { MaterialCommunityIcons as Icon } from "react-native-vector-icons";
 import UserDetails from "../models/UserDetails";
 
 export default function PaymentScreen({ navigation }) {
@@ -26,6 +27,8 @@ export default function PaymentScreen({ navigation }) {
   const [creditCardNumber, setCreditCardNumber] = useState("");
   const [creditCardExDate, setCreditCardExDate] = useState("");
   const [cvv, setCvv] = useState("");
+
+  const symbol = "®";
 
   if (userFirstName instanceof String && userFirstName > 0) {
     alert("User First Name Incoreect");
@@ -95,9 +98,21 @@ export default function PaymentScreen({ navigation }) {
     setCvv(true);
   }
 
+  const details = "Please fill up your details";
+  const payment = "Please fill up your credit card details";
+
   return (
     <View style={styles.generalView}>
-      <Text style={styles.cartTitleText}>Details and Paymnet</Text>
+      <View style={styles.totalPaymentView}>
+        <Icon
+          name="information"
+          size={30}
+          color="#212F3D"
+          style={{ textAlign: "center", fontWeight: "bold" }}
+        >
+          {details}
+        </Icon>
+      </View>
 
       <FormItem
         style={{ margin: 15 }}
@@ -119,7 +134,7 @@ export default function PaymentScreen({ navigation }) {
 
       <FormItem
         style={{ margin: 15 }}
-        placeholder="Enter Your Email..."
+        placeholder="Enter Your Email Address..."
         isRequired
         value={UserDetails.email}
         onChangeText={(text) => setEmailAddress(text)}
@@ -128,7 +143,7 @@ export default function PaymentScreen({ navigation }) {
 
       <FormItem
         style={{ margin: 15 }}
-        placeholder="Enter Your Phone Nunber..."
+        placeholder="Enter Your Phone Number..."
         isRequired
         value={UserDetails.cellNumber}
         onChangeText={(cellNumber) => setCellNumber(cellNumber)}
@@ -137,7 +152,7 @@ export default function PaymentScreen({ navigation }) {
 
       <FormItem
         style={{ margin: 15 }}
-        placeholder="Enter Your Country... "
+        placeholder="Enter Your Country Name... "
         isRequired
         value={UserDetails.count}
         onChangeText={(text) => setCountry(text)}
@@ -146,7 +161,7 @@ export default function PaymentScreen({ navigation }) {
 
       <FormItem
         style={{ margin: 15 }}
-        placeholder="Enter Your City..."
+        placeholder="Enter Your City Name..."
         isRequired
         value={UserDetails.city}
         onChangeText={(text) => setCity(text)}
@@ -155,16 +170,27 @@ export default function PaymentScreen({ navigation }) {
 
       <FormItem
         style={{ margin: 15 }}
-        placeholder="Enter Your Address..."
+        placeholder="Enter Your Resident Address..."
         isRequired
         value={UserDetails.address}
         onChangeText={(text) => setAddress(text)}
         asterik
       ></FormItem>
 
+      <View style={styles.totalPaymentView}>
+        <Icon
+          name="credit-card"
+          size={30}
+          color="#212F3D"
+          style={{ textAlign: "center", fontWeight: "bold" }}
+        >
+          {payment}
+        </Icon>
+      </View>
+
       <FormItem
         style={{ margin: 15 }}
-        placeholder="Enter Your Card Holder Name..."
+        placeholder="Enter Full Card Holder Name..."
         isRequired
         value={UserDetails.card}
         onChangeText={(text) => setCardHolderName(text)}
@@ -173,7 +199,7 @@ export default function PaymentScreen({ navigation }) {
 
       <FormItem
         style={{ margin: 15 }}
-        placeholder="Enter Your ID Number..."
+        placeholder="Enter Card Holder ID Number..."
         isRequired
         value={UserDetails.id}
         onChangeText={(idNumber) => setIdNumber(idNumber)}
@@ -182,7 +208,7 @@ export default function PaymentScreen({ navigation }) {
 
       <FormItem
         style={{ margin: 15 }}
-        placeholder="Enter Your Credit Card..."
+        placeholder="Enter Your Credit Card Number..."
         isRequired
         value={UserDetails.creditCard}
         onChangeText={(text) => setCreditCardNumber(text)}
@@ -191,7 +217,7 @@ export default function PaymentScreen({ navigation }) {
 
       <FormItem
         style={{ margin: 15 }}
-        placeholder="Enter Your Ex Date Card..."
+        placeholder="Enter Your Card Expiry Date..."
         isRequired
         value={UserDetails.exCardDate}
         onChangeText={(Number) => setCreditCardExDate(Number)}
@@ -200,7 +226,7 @@ export default function PaymentScreen({ navigation }) {
 
       <FormItem
         style={{ margin: 15 }}
-        placeholder="Enter Your Cvv Number..."
+        placeholder="Enter Your Card's CVV Number..."
         isRequired
         value={UserDetails.cvv}
         onChangeText={(Number) => setCvv(Number)}
@@ -221,6 +247,10 @@ export default function PaymentScreen({ navigation }) {
       >
         <Text style={[styles.cartTitleText, { padding: 10 }]}>Submit</Text>
       </TouchableOpacity>
+      <Text style={styles.footer}>
+        pedal it store
+        <Text style={[styles.footer, { fontSize: 35 }]}>{symbol}</Text>
+      </Text>
     </View>
   );
 }
