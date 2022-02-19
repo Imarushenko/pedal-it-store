@@ -45,3 +45,4 @@
 <h2>The buyer can press on " Continue Shopping " and it will take him to the categories screen</h2>
 <br>
 <h3 style="color: #1ABC9C"><b>Made by Igor & Vova</b></h3>
+<br>
