@@ -1,3 +1,4 @@
+// imports
 import React from "react";
 import { Platform } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
@@ -9,6 +10,7 @@ import CartScreen from "../screens/CartScreen";
 import PaymentScreen from "../screens/PaymentScreen";
 import SummaryScreen from "../screens/SummaryScreen";
 
+// styles of the header
 const defaultNavOption = {
   headerStyle: {
     backgroundColor: Platform.OS === "android" ? "" : "#2E4053",

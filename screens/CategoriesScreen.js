@@ -39,7 +39,7 @@ export default function CategoriesScreen({ route, navigation }) {
       ></FlatList>
       <Text style={styles.footer}>
         pedal it store
-        <Text style={[styles.footer, { fontSize: 35 }]}>{symbol}</Text>
+        <Text style={[styles.footer, { fontSize: 35 }]}>{" " + symbol}</Text>
       </Text>
     </ScrollView>
   );

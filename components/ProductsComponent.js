@@ -3,6 +3,7 @@ import React from "react";
 import { View, Text, TouchableOpacity, ImageBackground } from "react-native";
 import styles from "../assets/Styles";
 
+// products component
 const ProductComponent = (props) => {
   return (
     <TouchableOpacity style={styles.gridItem} onPress={props.onSelectProduct}>

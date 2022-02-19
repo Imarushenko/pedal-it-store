@@ -34,7 +34,7 @@ const HomeScreen = ({ navigation }) => {
       ></FlatList>
       <Text style={styles.footer}>
         pedal it store
-        <Text style={[styles.footer, { fontSize: 35 }]}>{symbol}</Text>
+        <Text style={[styles.footer, { fontSize: 35 }]}>{" " + symbol}</Text>
       </Text>
     </ScrollView>
   );

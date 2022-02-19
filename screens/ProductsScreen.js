@@ -1,3 +1,4 @@
+// imports
 import React from "react";
 import { View, ScrollView, Image, Text, TouchableOpacity } from "react-native";
 import { PRODUCTS, CART } from "../data/Dummy-Data";
@@ -152,7 +153,7 @@ export default function ProductsScreen({ route, navigation }) {
       <Text style={[styles.footer, { color: "white" }]}>
         pedal it store
         <Text style={[styles.footer, { fontSize: 35, color: "white" }]}>
-          {symbol}
+          {" " + symbol}
         </Text>
       </Text>
     </View>

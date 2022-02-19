@@ -1,6 +1,8 @@
+// imports
 import React from "react";
 import styles from "../assets/Styles";
-import { Text, ScrollView, TouchableOpacity, View, Footer } from "react-native";
+import { Text, ScrollView, TouchableOpacity, View } from "react-native";
+import { MaterialCommunityIcons as Icon } from "react-native-vector-icons";
 
 export default function SummaryScreen({ navigation }) {
   const summary =
@@ -10,10 +12,19 @@ export default function SummaryScreen({ navigation }) {
 
   return (
     <ScrollView style={styles.generalView}>
-      <View style={styles.totalPaymentView}>
+      <View style={{ marginTop: "12%" }}>
+        <Icon
+          name="shopping"
+          size={65}
+          color="black"
+          style={{ textAlign: "center", fontWeight: "bold" }}
+        >
+          {"  Order Submitted"}
+        </Icon>
+      </View>
+      <View style={[styles.totalPaymentView, { marginTop: "30%" }]}>
         <Text style={styles.finalTitle}>{summary}</Text>
       </View>
-      {/* <Text style={[styles.finalTitle, {paddingTop: 150, color: "#E74C3C"}]}>Thank you for shopping at " Pedal It "</Text> */}
       <TouchableOpacity
         style={[
           styles.touchableOpacityStyle,
@@ -29,8 +40,8 @@ export default function SummaryScreen({ navigation }) {
         <Text style={styles.cartTitleText}>Continue Shopping</Text>
       </TouchableOpacity>
       <Text style={styles.footer}>
-        pedal it store
-        <Text style={[styles.footer, { fontSize: 35 }]}>{symbol}</Text>
+        pedal it Store
+        <Text style={[styles.footer, { fontSize: 35 }]}>{" " + symbol}</Text>
       </Text>
     </ScrollView>
   );

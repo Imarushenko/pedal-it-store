@@ -1,14 +1,7 @@
-import {
-  TextInput,
-  ScrollView,
-  View,
-  Text,
-  Button,
-  Touchable,
-  TouchableOpacity,
-} from "react-native";
-import React, { createRef } from "react";
-import { FormItem, submitForm, Form } from "react-native-form-component";
+// imports
+import { View, Text, TouchableOpacity } from "react-native";
+import React from "react";
+import { FormItem } from "react-native-form-component";
 import { useState } from "react";
 import styles from "../assets/Styles";
 import { MaterialCommunityIcons as Icon } from "react-native-vector-icons";
@@ -110,7 +103,7 @@ export default function PaymentScreen({ navigation }) {
           color="#212F3D"
           style={{ textAlign: "center", fontWeight: "bold" }}
         >
-          {details}
+          {"  " + details}
         </Icon>
       </View>
 
@@ -184,7 +177,7 @@ export default function PaymentScreen({ navigation }) {
           color="#212F3D"
           style={{ textAlign: "center", fontWeight: "bold" }}
         >
-          {payment}
+          {"  " + payment}
         </Icon>
       </View>
 
@@ -249,7 +242,7 @@ export default function PaymentScreen({ navigation }) {
       </TouchableOpacity>
       <Text style={styles.footer}>
         pedal it store
-        <Text style={[styles.footer, { fontSize: 35 }]}>{symbol}</Text>
+        <Text style={[styles.footer, { fontSize: 35 }]}>{"  " + symbol}</Text>
       </Text>
     </View>
   );

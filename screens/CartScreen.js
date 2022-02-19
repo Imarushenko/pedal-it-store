@@ -97,7 +97,7 @@ export default function CartScreen({ navigation }) {
           color="#0B5345"
           style={{ textAlign: "center", fontWeight: "bold" }}
         >
-          {"Your Total Payment  " + sum + " $"}
+          {" Total Price:  " + sum + " $"}
         </Icon>
       </View>
 
@@ -112,7 +112,7 @@ export default function CartScreen({ navigation }) {
       </TouchableOpacity>
       <Text style={styles.footer}>
         pedal it store
-        <Text style={[styles.footer, { fontSize: 35 }]}>{symbol}</Text>
+        <Text style={[styles.footer, { fontSize: 35 }]}>{" " + symbol}</Text>
       </Text>
     </ScrollView>
   );

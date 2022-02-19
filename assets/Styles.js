@@ -3,16 +3,19 @@
 import { StyleSheet } from "react-native";
 
 export default StyleSheet.create({
-  screen: {
+  containerOfProducts: {
     flex: 1,
+    borderRadius: 8,
+    borderColor: "black",
+    borderWidth: 5,
+    backgroundColor: "white",
+    shadowColor: "#E74C3C",
+    shadowOpacity: 3,
+    shadowOffset: { width: 9, height: 8 },
+    shadowRadius: 10,
+    elevation: 3,
     justifyContent: "center",
-    alignContent: "center",
-  },
-
-  gridItem: {
-    flex: 1,
-    margin: 20,
-    height: 370,
+    alignItems: "center",
   },
 
   container: {
@@ -30,19 +33,10 @@ export default StyleSheet.create({
     alignItems: "center",
   },
 
-  containerOfProducts: {
+  gridItem: {
     flex: 1,
-    borderRadius: 8,
-    borderColor: "black",
-    borderWidth: 5,
-    backgroundColor: "white",
-    shadowColor: "#E74C3C",
-    shadowOpacity: 3,
-    shadowOffset: { width: 9, height: 8 },
-    shadowRadius: 10,
-    elevation: 3,
-    justifyContent: "center",
-    alignItems: "center",
+    margin: 20,
+    height: 370,
   },
 
   background_image: {
@@ -84,7 +78,6 @@ export default StyleSheet.create({
     right: 0,
   },
 
-  // product details style
   productDetailsText: {
     fontSize: 20,
     margin: 3,
@@ -111,7 +104,6 @@ export default StyleSheet.create({
     borderWidth: 6,
     borderRadius: 7,
     margin: 10,
-    // marginLeft: 2,
     padding: 2,
     borderColor: "black",
     height: 350,
@@ -129,7 +121,6 @@ export default StyleSheet.create({
     width: "100%",
   },
 
-  // cart style
   cartIcon: {
     fontSize: 30,
     color: "white",
@@ -139,12 +130,10 @@ export default StyleSheet.create({
     color: "black",
     fontSize: 25,
     fontWeight: "bold",
-    // margin: 10,
     textAlign: "center",
   },
 
   cartView: {
-    // margin: 1,
     width: "90%",
     height: "80%",
     marginLeft: 50,
@@ -166,14 +155,6 @@ export default StyleSheet.create({
     alignItems: "center",
     backgroundColor: "black",
   },
-
-  // text: {
-  //   fontSize: 16,
-  //   lineHeight: 21,
-  //   fontWeight: 'bold',
-  //   letterSpacing: 0.25,
-  //   color: 'white',
-  // },
 
   headerTitle: {
     textAlign: "center",
@@ -220,6 +201,6 @@ export default StyleSheet.create({
     fontWeight: "bold",
     textAlign: "center",
     position: "relative",
-    color: "#17202A"
-  }
+    color: "#17202A",
+  },
 });

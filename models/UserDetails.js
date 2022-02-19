@@ -1,3 +1,4 @@
+// user details class
 class UserDetails {
   constructor(fName, lName, email, cellNumber, count, city, address, card, id, creditCard, exCardDate, cvv) {
     this.fName = fName;
