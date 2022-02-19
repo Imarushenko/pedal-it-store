@@ -34,7 +34,7 @@ export default function CartScreen({ navigation }) {
         <Text style={[styles.headerTitle, { color: "black" }]}>CART</Text>
       </View>
 
-      <View style={[styles.cartView, {paddingTop: 35}]}>
+      <View style={[styles.cartView, { paddingTop: 35 }]}>
         <Text style={styles.cartTitleText}>{CART[0].product_title}</Text>
         <Text style={styles.cartTitleText}>
           {"Price: " +
@@ -52,9 +52,9 @@ export default function CartScreen({ navigation }) {
       <Text style={styles.cartTitleText}>{CART[1].product_title}</Text>
       <Text style={styles.cartTitleText}>
         {"Price: " +
-          CART[0].price +
+          CART[1].price +
           " $ ,  Shipping Price: " +
-          CART[0].shipping +
+          CART[1].shipping +
           " $"}
       </Text>
       <ImageBackground
