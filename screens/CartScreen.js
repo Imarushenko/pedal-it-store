@@ -30,25 +30,38 @@ export default function CartScreen({ navigation }) {
 
   return (
     <ScrollView style={styles.generalView}>
-      <View>
-        <Text style={styles.headerTitle}>CART</Text>
+      <View style={{ backgroundColor: "#F4F6F7" }}>
+        <Text style={[styles.headerTitle, { color: "black" }]}>CART</Text>
       </View>
 
-      <ImageBackground
-        style={styles.cartView}
-        source={{ uri: CART[0].productImage }}
-        resizeMode="cover"
-      >
+      <View style={[styles.cartView, {paddingTop: 35}]}>
         <Text style={styles.cartTitleText}>{CART[0].product_title}</Text>
-      </ImageBackground>
-
+        <Text style={styles.cartTitleText}>
+          {"Price: " +
+            CART[0].price +
+            " $ ,  Shipping Price: " +
+            CART[0].shipping +
+            " $"}
+        </Text>
+        <ImageBackground
+          style={styles.cartView}
+          source={{ uri: CART[0].productImage }}
+          resizeMode="cover"
+        ></ImageBackground>
+      </View>
+      <Text style={styles.cartTitleText}>{CART[1].product_title}</Text>
+      <Text style={styles.cartTitleText}>
+        {"Price: " +
+          CART[0].price +
+          " $ ,  Shipping Price: " +
+          CART[0].shipping +
+          " $"}
+      </Text>
       <ImageBackground
         style={styles.cartView}
         source={{ uri: CART[1].productImage }}
         resizeMode="cover"
-      >
-        <Text style={styles.cartTitleText}>{CART[1].product_title}</Text>
-      </ImageBackground>
+      ></ImageBackground>
 
       <TextInput
         placeholder="Enter a coupon..."
